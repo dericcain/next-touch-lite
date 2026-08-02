@@ -110,12 +110,13 @@ struct WatchPreflight: View {
                 NavigationLink { WatchLive(practice: practice) } label: {
                     Image(systemName: "play.fill")
                         .font(.title3)
-                        .frame(width: 58, height: 58)
+                        .frame(width: 48, height: 48)
                 }
                 .accessibilityLabel("Start practice")
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.circle)
                 .tint(.green)
+                .padding(.vertical, 6)
 
                 Text("\(practice.totalMinutes)m total · \(practice.activities.count) activities")
                     .font(.caption2)
