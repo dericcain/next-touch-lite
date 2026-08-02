@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000051 /* NextTouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000040 /* NextTouchApp.swift */; };
+		000000000000000000000052 /* PracticeLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000041 /* PracticeLibraryView.swift */; };
+		000000000000000000000053 /* PracticeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* PracticeEditorView.swift */; };
+		000000000000000000000054 /* WatchPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000043 /* WatchPracticeView.swift */; };
+		000000000000000000000055 /* PracticeTimerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* PracticeTimerEngine.swift */; };
+		000000000000000000000056 /* WatchConnectivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000045 /* WatchConnectivityBridge.swift */; };
+		000000000000000000000057 /* PracticeSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000046 /* PracticeSync.swift */; };
+		000000000000000000000058 /* PracticeRunSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000047 /* PracticeRunSummaryView.swift */; };
+		000000000000000000000059 /* DrillCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000048 /* DrillCatalog.swift */; };
+		00000000000000000000005B /* PracticeNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004A /* PracticeNotifications.swift */; };
+		00000000000000000000005C /* DomainSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004B /* DomainSchema.swift */; };
+		00000000000000000000005D /* SyncInboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004C /* SyncInboxView.swift */; };
+		00000000000000000000005E /* PracticeValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004D /* PracticeValidation.swift */; };
+		00000000000000000000005F /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004E /* Repositories.swift */; };
+		000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000091 /* PracticeTimerEngineTests.swift */; };
+		000000000000000000000107 /* PracticeDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* PracticeDomainTests.swift */; };
+		00000000000000000000010B /* starter_drills_v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010A /* starter_drills_v1.json */; };
+		00000000000000000000010C /* seeded-drills.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010D /* seeded-drills.json */; };
+		000000000000000000000106 /* WatchNextTouchExtension.appex in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 000000000000000000000086 /* WatchNextTouchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		000000000000000000000084 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000083 /* WatchApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000040 /* NextTouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTouchApp.swift; sourceTree = "<group>"; };
+		000000000000000000000041 /* PracticeLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeLibraryView.swift; sourceTree = "<group>"; };
+		000000000000000000000042 /* PracticeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeEditorView.swift; sourceTree = "<group>"; };
+		000000000000000000000043 /* WatchPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPracticeView.swift; sourceTree = "<group>"; };
+		000000000000000000000044 /* PracticeTimerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimerEngine.swift; sourceTree = "<group>"; };
+		000000000000000000000045 /* WatchConnectivityBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityBridge.swift; sourceTree = "<group>"; };
+		000000000000000000000046 /* PracticeSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSync.swift; sourceTree = "<group>"; };
+		000000000000000000000047 /* PracticeRunSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeRunSummaryView.swift; sourceTree = "<group>"; };
+		000000000000000000000048 /* DrillCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillCatalog.swift; sourceTree = "<group>"; };
+		00000000000000000000004A /* PracticeNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeNotifications.swift; sourceTree = "<group>"; };
+		00000000000000000000004B /* DomainSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainSchema.swift; sourceTree = "<group>"; };
+		00000000000000000000004C /* SyncInboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncInboxView.swift; sourceTree = "<group>"; };
+		00000000000000000000004D /* PracticeValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeValidation.swift; sourceTree = "<group>"; };
+		00000000000000000000004E /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		000000000000000000000061 /* NextTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = NextTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000083 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
+		000000000000000000000086 /* WatchNextTouchExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; path = WatchNextTouchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000102 /* WatchNextTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = WatchNextTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000091 /* PracticeTimerEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimerEngineTests.swift; sourceTree = "<group>"; };
+		000000000000000000000108 /* PracticeDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDomainTests.swift; sourceTree = "<group>"; };
+		00000000000000000000010A /* starter_drills_v1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ../starter_drills_v1.json; sourceTree = "<group>"; };
+		00000000000000000000010D /* seeded-drills.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ../seeded-drills.json; sourceTree = "<group>"; };
+		000000000000000000000092 /* NextTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NextTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* NextTouch */,
+				000000000000000000000005 /* Frameworks */,
+				000000000000000000000082 /* WatchNextTouch */,
+				000000000000000000000093 /* NextTouchTests */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000061 /* NextTouch.app */,
+				000000000000000000000086 /* WatchNextTouchExtension.appex */,
+				000000000000000000000102 /* WatchNextTouch.app */,
+				000000000000000000000092 /* NextTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* NextTouch */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000040 /* NextTouchApp.swift */,
+				000000000000000000000041 /* PracticeLibraryView.swift */,
+				000000000000000000000042 /* PracticeEditorView.swift */,
+				000000000000000000000043 /* WatchPracticeView.swift */,
+				000000000000000000000044 /* PracticeTimerEngine.swift */,
+				000000000000000000000045 /* WatchConnectivityBridge.swift */,
+				000000000000000000000046 /* PracticeSync.swift */,
+				000000000000000000000047 /* PracticeRunSummaryView.swift */,
+				000000000000000000000048 /* DrillCatalog.swift */,
+				00000000000000000000004A /* PracticeNotifications.swift */,
+				00000000000000000000004B /* DomainSchema.swift */,
+				00000000000000000000004C /* SyncInboxView.swift */,
+				00000000000000000000004D /* PracticeValidation.swift */,
+				00000000000000000000004E /* Repositories.swift */,
+				00000000000000000000010A /* starter_drills_v1.json */,
+				00000000000000000000010D /* seeded-drills.json */,
+			);
+			path = NextTouch;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000000000000000082 /* WatchNextTouch */ = {isa = PBXGroup; children = (000000000000000000000083 /* WatchApp.swift */); path = WatchNextTouch; sourceTree = "<group>"; };
+		000000000000000000000093 /* NextTouchTests */ = {isa = PBXGroup; children = (000000000000000000000091 /* PracticeTimerEngineTests.swift */, 000000000000000000000108 /* PracticeDomainTests.swift */); path = NextTouchTests; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000060 /* NextTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000011 /* Build configuration list for PBXNativeTarget "NextTouch" */;
+			buildPhases = (
+				000000000000000000000050 /* Sources */,
+				000000000000000000000109 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextTouch;
+			productName = NextTouch;
+			productReference = 000000000000000000000061 /* NextTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000080 /* WatchNextTouchExtension */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000012; buildPhases = (000000000000000000000085); buildRules = (); dependencies = (); name = WatchNextTouchExtension; productName = WatchNextTouchExtension; productReference = 000000000000000000000086; productType = "com.apple.product-type.watchkit2-extension"; };
+		000000000000000000000100 /* WatchNextTouch */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000014; buildPhases = (000000000000000000000105); buildRules = (); dependencies = (000000000000000000000103); name = WatchNextTouch; productName = WatchNextTouch; productReference = 000000000000000000000102; productType = "com.apple.product-type.application.watchapp2"; };
+		000000000000000000000094 /* NextTouchTests */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000013; buildPhases = (000000000000000000000095); buildRules = (); dependencies = (000000000000000000000096); name = NextTouchTests; productName = NextTouchTests; productReference = 000000000000000000000092; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000096 /* NextTouch host */ = {isa = PBXTargetDependency; target = 000000000000000000000060 /* NextTouch */; targetProxy = 000000000000000000000097; };
+		000000000000000000000103 /* Watch extension */ = {isa = PBXTargetDependency; target = 000000000000000000000080 /* WatchNextTouchExtension */; targetProxy = 000000000000000000000104; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000097 = {isa = PBXContainerItemProxy; containerPortal = 000000000000000000000001; proxyType = 1; remoteGlobalIDString = 000000000000000000000060; remoteInfo = NextTouch; };
+		000000000000000000000104 = {isa = PBXContainerItemProxy; containerPortal = 000000000000000000000001; proxyType = 1; remoteGlobalIDString = 000000000000000000000080; remoteInfo = WatchNextTouchExtension; };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = 000000000000000000000010 /* Build configuration list for PBXProject "NextTouch" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000060 /* NextTouch */,
+				000000000000000000000080 /* WatchNextTouchExtension */,
+				000000000000000000000100 /* WatchNextTouch */,
+				000000000000000000000094 /* NextTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000051 /* NextTouchApp.swift in Sources */,
+				000000000000000000000052 /* PracticeLibraryView.swift in Sources */,
+				000000000000000000000053 /* PracticeEditorView.swift in Sources */,
+				000000000000000000000054 /* WatchPracticeView.swift in Sources */,
+				000000000000000000000055 /* PracticeTimerEngine.swift in Sources */,
+				000000000000000000000056 /* WatchConnectivityBridge.swift in Sources */,
+				000000000000000000000057 /* PracticeSync.swift in Sources */,
+				000000000000000000000058 /* PracticeRunSummaryView.swift in Sources */,
+				000000000000000000000059 /* DrillCatalog.swift in Sources */,
+				00000000000000000000005B /* PracticeNotifications.swift in Sources */,
+				00000000000000000000005C /* DomainSchema.swift in Sources */,
+				00000000000000000000005D /* SyncInboxView.swift in Sources */,
+				00000000000000000000005E /* PracticeValidation.swift in Sources */,
+				00000000000000000000005F /* Repositories.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000109 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000010B /* starter_drills_v1.json in Resources */,
+				00000000000000000000010C /* seeded-drills.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+		000000000000000000000085 /* Watch Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000084 /* WatchApp.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000095 /* Test Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */, 000000000000000000000107 /* PracticeDomainTests.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000105 /* Embed Watch Content */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = "$(CONTENTS_FOLDER_PATH)/Watch"; dstSubfolderSpec = 16; files = (000000000000000000000106 /* WatchNextTouchExtension.appex in Embed Watch Content */); runOnlyForDeploymentPostprocessing = 0; };
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000074 /* Watch Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Debug; };
+		000000000000000000000075 /* Watch Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Release; };
+		000000000000000000000076 /* Tests Debug */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.tests; PRODUCT_NAME = NextTouchTests; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextTouch.app/NextTouch"; }; name = Debug; };
+		000000000000000000000077 /* Tests Release */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.tests; PRODUCT_NAME = NextTouchTests; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextTouch.app/NextTouch"; }; name = Release; };
+		000000000000000000000078 /* Watch App Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Debug; };
+		000000000000000000000079 /* Watch App Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Release; };
+		000000000000000000000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		000000000000000000000072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NextTouch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice;
+				PRODUCT_NAME = NextTouch;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NextTouch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice;
+				PRODUCT_NAME = NextTouch;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000012 /* Watch configuration */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000074 /* Watch Debug */,000000000000000000000075 /* Watch Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000013 /* Tests configuration */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000076 /* Tests Debug */,000000000000000000000077 /* Tests Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000014 /* Watch app configuration */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000078 /* Watch App Debug */,000000000000000000000079 /* Watch App Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000010 /* Build configuration list for PBXProject "NextTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000070 /* Debug */,
+				000000000000000000000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000011 /* Build configuration list for PBXNativeTarget "NextTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000072 /* Debug */,
+				000000000000000000000073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

@@ -1,0 +1,31 @@
+# Xcode and Swift build products
+.build/
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.xccheckout
+*.moved-aside
+
+# Apple platform artifacts and local metadata
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.hmap
+.DS_Store
+
+# JavaScript prototype tooling
+node_modules/
+dist/
+.npm/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.mobileprovision
+*.cer
+secrets/
+credentials/

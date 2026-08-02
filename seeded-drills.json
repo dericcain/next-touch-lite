@@ -1,0 +1,3011 @@
+{
+  "description": "Current shared drill-library records seeded by the database. Supersedes the starter library migration.",
+  "source_migration": "supabase/migrations/20260713124500_replace_starter_drill_library.sql",
+  "value_notes": {
+    "$database_time_at_migration_execution": "timezone('utc', now()) at the time the migration runs",
+    "$database_generated_uuid": "Postgres default gen_random_uuid()"
+  },
+  "drill_count": 100,
+  "drills": [
+    {
+      "id": "12e3936f-7b2f-598a-8160-36ec6f19cdbe",
+      "team_id": null,
+      "name": "1. Ball Mastery in a Grid",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Players dribble freely while rehearsing core touches and turns. Use it to raise energy and ball contact volume quickly.",
+      "setup": "- Create a 20x20 yard grid. Each player has one ball. Coach calls surfaces, turns, and speed changes while players avoid contact.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Small touches in traffic",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "12e3936f-7b2f-598a-8160-36ec6f19cdbe",
+          "label": "Ball Mastery Warm-Up (Dribbling + Turns)",
+          "url": "https://soccerxpert.com/drills/soccer-dribbling-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "2e4d2e08-2787-58ce-95d1-776f66c73cc4",
+      "team_id": null,
+      "name": "2. Dribbling Through Gates",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Players score by dribbling through cone gates under control. The drill warms up touch quality, scanning, and direction change.",
+      "setup": "- Set a 25x25 yard grid with 10-14 cone gates spread throughout. Each player has a ball and dribbles through as many different gates as possible.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Accelerate through gate",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "2e4d2e08-2787-58ce-95d1-776f66c73cc4",
+          "label": "Dribbling Through Gates (Ball Control + Scanning)",
+          "url": "https://soccerxpert.com/drills/details/dribbling-through-gates-race",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "9e0b926d-efa9-5f2d-b78f-f9d43f70b9c8",
+      "team_id": null,
+      "name": "3. Passing Through Windows",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Pairs pass through a small cone window and follow their pass. It rehearses clean inside-foot passing before the main session.",
+      "setup": "- Set several 10-yard passing lanes with a 3-yard cone window in the middle. Put two or three players at each end with one ball per lane.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "9e0b926d-efa9-5f2d-b78f-f9d43f70b9c8",
+          "label": "Passing Through Windows (Accuracy + Follow Pass)",
+          "url": "https://soccerxpert.com/drills/details/inside-of-the-foot-passing",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "57a2b892-c839-59aa-8c3f-7fbb45c65296",
+      "team_id": null,
+      "name": "4. Three-Cone Passing Rotation",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Three players pass and rotate around a triangle. The pattern warms up passing rhythm, receiving angle, and movement after pass.",
+      "setup": "- Build 8-yard triangles. Place two players at one cone and one player at another, leaving one cone open. One ball starts with the first player.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "57a2b892-c839-59aa-8c3f-7fbb45c65296",
+          "label": "Three-Cone Passing Rotation (Pass + Move)",
+          "url": "https://soccerxpert.com/drills/details/three-cone-passing-drill",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "9c72406c-1ca2-5bfd-9713-060a79da8928",
+      "team_id": null,
+      "name": "5. Four-Cone Passing Rotation",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Players pass around a square and move to the next cone. It gives simple repetition for passing, receiving, and timing.",
+      "setup": "- Create 12x12 yard squares. Place players on three cones with one empty cone. One ball per square, with extra players waiting at the start cone.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "9c72406c-1ca2-5bfd-9713-060a79da8928",
+          "label": "Four-Cone Passing Rotation (Technique + Movement)",
+          "url": "https://soccerxpert.com/drills/details/four-cone-passing-drill",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "88fad59f-0990-5276-85e2-28a86f1746c5",
+      "team_id": null,
+      "name": "6. Dynamic Partner Passing",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Pairs pass while moving through a lane. It prepares players for passing while their feet and body are active.",
+      "setup": "- Make 12x20 yard lanes. Partners start 8-10 yards apart with one ball and move up and back inside the lane while passing.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Keep spacing consistent",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "88fad59f-0990-5276-85e2-28a86f1746c5",
+          "label": "Partner Passing Warm-Up (Movement + Touch)",
+          "url": "https://soccerxpert.com/drills/details/passing-warm-up-drill",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "419da2fd-2d2e-5327-b2ce-abdc93aab690",
+      "team_id": null,
+      "name": "7. Handling Flighted Serves",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Players receive thrown or chipped balls in a circle. It warms up first touch with feet, thigh, and chest using age-appropriate service.",
+      "setup": "- Create a 20-yard circle. Half the players stand outside with balls. Receivers move inside the circle, check to a server, receive, and return the ball.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Cushion contact",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "419da2fd-2d2e-5327-b2ce-abdc93aab690",
+          "label": "Handling Flighted Balls (First Touch Warm-Up)",
+          "url": "https://soccerxpert.com/drills/details/id1207",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "890c23bb-7439-5a32-80a9-042dc940e79c",
+      "team_id": null,
+      "name": "8. Reaction Gate 1v1",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Attackers react to a coach signal and beat a defender through a gate. It warms up decision speed and competitive movement.",
+      "setup": "- Create 10x10 yard boxes with two cone gates on opposite sides. Pair players with one attacker and one defender. Coach calls the scoring gate.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Sell the first move",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "890c23bb-7439-5a32-80a9-042dc940e79c",
+          "label": "Reaction Gate 1v1 (Decision + Dribble)",
+          "url": "https://soccerxpert.com/drills/1v1",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "92e9b2af-223f-5dff-b869-efcc40464509",
+      "team_id": null,
+      "name": "9. Rondo Activation 3v1",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Three attackers keep the ball from one defender. It activates scanning, support angles, and quick passing.",
+      "setup": "- Set 8x8 to 10x10 yard grids. Use groups of four with three outside attackers and one defender inside. Rotate defender after a win or timed round.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "92e9b2af-223f-5dff-b869-efcc40464509",
+          "label": "3v1 Rondo (Activation + Angles)",
+          "url": "https://soccerxpert.com/drills/details/3v1-rondo-drill",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "1cbbc133-4c99-597d-9864-b5aa53a6927e",
+      "team_id": null,
+      "name": "10. Possession Tag in a Grid",
+      "category": "warm_up",
+      "planned_duration_minutes": 15,
+      "description": "Players dribble to protect their ball while taggers apply light pressure. It raises intensity and teaches shielding in traffic.",
+      "setup": "- Create a 20x25 yard grid. Most players have a ball. Two taggers without balls try to touch balls out of bounds; players re-enter after a ball mastery task.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Body between defender and ball",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "1cbbc133-4c99-597d-9864-b5aa53a6927e",
+          "label": "Possession Tag Warm-Up (Shielding + Awareness)",
+          "url": "https://soccerxpert.com/drills/top-10-soccer-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "64e50287-51be-5819-8355-081a1d86897e",
+      "team_id": null,
+      "name": "11. Dribbling With Turns",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players repeat dribble-turn-accelerate actions in a grid. It builds control, balance, and direction change.",
+      "setup": "- Create a 20x20 yard grid. Each player has one ball. Coach demonstrates inside cut, outside cut, sole turn, and pullback.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Drop shoulder into turn",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "64e50287-51be-5819-8355-081a1d86897e",
+          "label": "Dribbling Turns (Control + Change Direction)",
+          "url": "https://soccerxpert.com/drills/soccer-dribbling-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "4d5d557e-1cf4-52e9-bda5-22d50fd9d562",
+      "team_id": null,
+      "name": "12. Ball Mastery Through Boxes",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players work through small boxes using different touch patterns. It gives high-repetition footwork without long lines.",
+      "setup": "- Set 4x4 yard boxes across a 25x25 yard area. One player per box with one ball. Players perform coach-called touches for short intervals.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Stay light on toes",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "4d5d557e-1cf4-52e9-bda5-22d50fd9d562",
+          "label": "Ball Mastery Boxes (Footwork + Control)",
+          "url": "https://soccerxpert.com/drills/soccer-dribbling-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "140d5a77-56a6-5e54-be89-4be6e99dfc13",
+      "team_id": null,
+      "name": "13. Dribbling in Traffic",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players dribble in a crowded grid while avoiding pressure. It teaches close control and scanning under realistic congestion.",
+      "setup": "- Create a 25x25 yard grid for 10-14 players. Each player has one ball. Players dribble freely and respond to coach commands.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Protect ball with body",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "140d5a77-56a6-5e54-be89-4be6e99dfc13",
+          "label": "Dribbling in Traffic (Close Control + Scanning)",
+          "url": "https://soccerxpert.com/drills/soccer-dribbling-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "231ef788-77ec-5f8f-8b83-2d0841738772",
+      "team_id": null,
+      "name": "14. Shielding From Pressure",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players protect the ball from a partner for short rounds. It teaches body position and patience when space is tight.",
+      "setup": "- Create several 8x8 yard boxes. Pair players with one ball. Attacker shields for 20-30 seconds while defender applies controlled pressure.",
+      "coaching_points": "- Body between defender and ball\n- Use arm for balance, not pushing\n- Feel pressure before turning\n- Keep ball on far foot",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "231ef788-77ec-5f8f-8b83-2d0841738772",
+          "label": "Shielding From Pressure (Body Position + Ball Protection)",
+          "url": "https://soccerxpert.com/drills/details/1v1-escape-pressure-from-behind",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "c84c1150-17a1-566d-ac95-a07987e3f491",
+      "team_id": null,
+      "name": "15. Turning Away From Pressure",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players receive with pressure behind and turn or play back. It teaches when to spin, shield, or bounce pass.",
+      "setup": "- Use 12x15 yard channels with three players. Server passes to receiver in middle, defender starts behind, and target waits at far end.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Know defender before first touch",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "c84c1150-17a1-566d-ac95-a07987e3f491",
+          "label": "Receiving Under Back Pressure (Turn or Set)",
+          "url": "https://soccerxpert.com/drills/details/1v1-escape-pressure-from-behind",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "c2667549-79a7-5df2-b1ba-0c1a13e993e8",
+      "team_id": null,
+      "name": "16. Moves Against Defender",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players practice one attacking move then attack a live defender. It connects technique to a real 1v1 decision.",
+      "setup": "- Create 12x18 yard channels with a cone gate at the far end. Attackers start with balls, defenders begin 5 yards away.",
+      "coaching_points": "- Attack defender at speed\n- Change direction sharply\n- Change speed after move\n- Keep final touch forward",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "c2667549-79a7-5df2-b1ba-0c1a13e993e8",
+          "label": "1v1 Moves Against Defender (Beat Player)",
+          "url": "https://soccerxpert.com/drills/1v1",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "bc6b343e-cbbb-5226-a232-47a874939dce",
+      "team_id": null,
+      "name": "17. First Touch Through Gates",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players receive and take first touch through a called gate. It links receiving shape with purposeful touch.",
+      "setup": "- Set 10x12 yard rectangles with a server on one side and receiver in middle. Place three colored gates around the receiver.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Touch with purpose",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "bc6b343e-cbbb-5226-a232-47a874939dce",
+          "label": "First Touch Through Gates (Receive + Exit)",
+          "url": "https://soccerxpert.com/drills/details/fixed-distance-passing-receiving-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "8eebcd6e-618b-5f7c-81bf-d2d0e552b53b",
+      "team_id": null,
+      "name": "18. Juggling to Control",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players juggle briefly then control and pass. It builds touch, balance, and confidence with bouncing or aerial balls.",
+      "setup": "- Use a 20x20 yard grid. Players work individually with one ball, then pair up for controlled service and return passes.",
+      "coaching_points": "- Relax ankle on cushion\n- Keep ball below waist\n- Reset quickly after mistake\n- Control before pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "8eebcd6e-618b-5f7c-81bf-d2d0e552b53b",
+          "label": "Juggling to Control (Touch + Balance)",
+          "url": "https://soccerxpert.com/drills/details/id1207",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "5f55f142-49a3-5452-822c-fa1aa89b2a51",
+      "team_id": null,
+      "name": "19. Sole Control in Tight Space",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Players use sole rolls, pullbacks, and drag touches inside a small box. It improves escape touches and foot coordination.",
+      "setup": "- Set 5x5 yard boxes. One player and one ball per box. Work 30-45 second rounds with rest and coaching between rounds.",
+      "coaching_points": "- Head up between touches\n- Use both feet\n- Change speed after action\n- Use sole to move ball across body",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "5f55f142-49a3-5452-822c-fa1aa89b2a51",
+          "label": "Sole Control Box (Pullbacks + Rolls)",
+          "url": "https://soccerxpert.com/drills/soccer-dribbling-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "a245b1f1-ae5f-5381-a4d4-c7fdb1fa77e8",
+      "team_id": null,
+      "name": "20. 1v1 Escape From Behind",
+      "category": "technical",
+      "planned_duration_minutes": 15,
+      "description": "Receivers start with a defender tight behind them and must escape. It teaches shielding, turning, and protecting possession.",
+      "setup": "- Create 12x15 yard grids. Server plays into attacker with back to defender. Attacker scores by dribbling through either end gate.",
+      "coaching_points": "- Feel pressure first\n- Use far foot\n- Spin when defender overcommits\n- Play simple if trapped",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "a245b1f1-ae5f-5381-a4d4-c7fdb1fa77e8",
+          "label": "1v1 Escape From Behind (Shield + Turn)",
+          "url": "https://soccerxpert.com/drills/details/1v1-escape-pressure-from-behind",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "d69f454e-803e-509a-ad96-07955f61fa78",
+      "team_id": null,
+      "name": "21. Inside-Foot Passing Through Gates",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players pass through a central gate and follow their pass. It builds clean technique and simple movement.",
+      "setup": "- Set 10-yard lanes with a 3-yard gate in the middle. Put two lines facing each other with one ball per lane.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "d69f454e-803e-509a-ad96-07955f61fa78",
+          "label": "Inside-Foot Passing Through Gates (Accuracy)",
+          "url": "https://soccerxpert.com/drills/details/inside-of-the-foot-passing",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "626dd0f4-3319-5aac-8dbf-d3621e19bc5f",
+      "team_id": null,
+      "name": "22. Variable Distance Passing",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Pairs pass through a gate from increasing distances. It teaches weight of pass and accuracy over short to medium range.",
+      "setup": "- Create a 3-yard central gate. Mark passing lines at 5, 10, and 15 yards on both sides. Pairs complete passes before moving back.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Match weight to distance",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "626dd0f4-3319-5aac-8dbf-d3621e19bc5f",
+          "label": "Variable Distance Passing (Weight + Accuracy)",
+          "url": "https://soccerxpert.com/drills/details/variable-distance-passing-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "f8e2a283-21a2-56fc-a283-c97650551b17",
+      "team_id": null,
+      "name": "23. Fixed Distance Passing",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Pairs pass and receive from a set distance with quality targets. It is a simple technical block for consistent repetition.",
+      "setup": "- Set paired cones 10-12 yards apart with one ball per pair. Keep pairs in lanes with enough room for first touch.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "f8e2a283-21a2-56fc-a283-c97650551b17",
+          "label": "Fixed Distance Passing (Technique Repetition)",
+          "url": "https://soccerxpert.com/drills/details/fixed-distance-passing-receiving-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "7ea9eba6-ea91-5e7f-a57f-991ad80bc11d",
+      "team_id": null,
+      "name": "24. Triangle Combination Passing",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players pass around a triangle with support movement. It teaches angles, timing, and playing around pressure.",
+      "setup": "- Create 10-yard triangles. Place one player at each cone with one extra at the start if needed. One ball moves around the triangle.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Check away then show",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "7ea9eba6-ea91-5e7f-a57f-991ad80bc11d",
+          "label": "Triangle Combination Passing (Angles + Timing)",
+          "url": "https://soccerxpert.com/drills/details/triangle-combination",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "ede22c4d-c561-55a3-bb01-9978deac73a0",
+      "team_id": null,
+      "name": "25. Wall Pass Combination",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players execute a simple give-and-go around a cone defender. It teaches passing, movement, and receiving beyond pressure.",
+      "setup": "- Build 12x15 yard stations with a cone defender in the middle. Player A passes to Player B, runs around cone, and receives return pass.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Run immediately after pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "ede22c4d-c561-55a3-bb01-9978deac73a0",
+          "label": "Wall Pass Combination (Give-and-Go)",
+          "url": "https://soccerxpert.com/drills/details/id1250",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "3051d998-31c3-55e8-8076-fdc9a03afdaf",
+      "team_id": null,
+      "name": "26. One-Touch Passing Pattern",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players complete a short passing pattern with one-touch targets. It improves rhythm, timing, and body shape.",
+      "setup": "- Set a 15x20 yard pattern with four cones and 5-6 players. Start with one ball and rotate players after each pass.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Prepare body before ball arrives",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "3051d998-31c3-55e8-8076-fdc9a03afdaf",
+          "label": "One-Touch Passing Pattern (Rhythm + Timing)",
+          "url": "https://soccerxpert.com/drills/details/one-touch-passing-combination-series-1",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "10a336e3-9072-5a48-8f7d-9fd00e0561c0",
+      "team_id": null,
+      "name": "27. Four-Corner Switching Passes",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Teams move the ball between corner boxes. It teaches changing the point of attack with support around the ball.",
+      "setup": "- Create a 40x40 yard grid with 5x5 yard boxes in each corner. Two teams play possession and score by passing into a corner box teammate.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Look long after short pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "10a336e3-9072-5a48-8f7d-9fd00e0561c0",
+          "label": "Four-Corner Switching Passes (Change Point)",
+          "url": "https://soccerxpert.com/drills/details/id1266",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "6b015d16-e991-5338-9d1c-be594f867d52",
+      "team_id": null,
+      "name": "28. Six-Cone Passing Movement",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players pass and move through a six-cone layout. It reinforces accuracy, timing, and rotation after each pass.",
+      "setup": "- Create a 15x25 yard area with six cones in two staggered lines. Players pass through the pattern and follow to the next cone.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Arrive ready to receive",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "6b015d16-e991-5338-9d1c-be594f867d52",
+          "label": "Six-Cone Passing Movement (Pass + Rotate)",
+          "url": "https://soccerxpert.com/drills/u10-u12-soccer-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e912a97e-bb71-54b9-b787-83fc27e66e07",
+      "team_id": null,
+      "name": "29. Long and Short Passing Sequence",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players combine short support passes with a longer switch. It teaches pass selection and body preparation.",
+      "setup": "- Use a 20x35 yard rectangle with players at both ends and two support players central. Ball travels short-short-long, then repeats back.",
+      "coaching_points": "- Set body for next pass\n- Strike through middle of ball\n- Support underneath long pass\n- Receive side-on",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e912a97e-bb71-54b9-b787-83fc27e66e07",
+          "label": "Long and Short Passing Sequence (Range + Support)",
+          "url": "https://soccerxpert.com/drills/details/id1220",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "aa967bf7-d6f3-538b-8525-0344468dcc7c",
+      "team_id": null,
+      "name": "30. Passing With Moving Targets",
+      "category": "passing",
+      "planned_duration_minutes": 15,
+      "description": "Players pass to teammates checking through gates. It teaches timing passes to a moving player rather than a standing cone.",
+      "setup": "- Set a 20x25 yard grid with four gates. Servers outside pass to runners who check through gates and return the ball.",
+      "coaching_points": "- Lock ankle for clean contact\n- Pass to the safe foot\n- Move after the pass\n- Scan before receiving\n- Pass when runner is open",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "aa967bf7-d6f3-538b-8525-0344468dcc7c",
+          "label": "Passing to Moving Targets (Timing + Accuracy)",
+          "url": "https://soccerxpert.com/drills/soccer-passing-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "10f8d1ba-056f-5f65-82b9-ac0b5c19f4f3",
+      "team_id": null,
+      "name": "31. Receiving Across Body",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players receive on the back foot and pass to the next side. It teaches open hips and playing forward quickly.",
+      "setup": "- Create 12x12 yard squares with players on three corners. Ball travels around the square with players receiving across body before passing.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "10f8d1ba-056f-5f65-82b9-ac0b5c19f4f3",
+          "label": "Receiving Across Body (Back Foot Touch)",
+          "url": "https://soccerxpert.com/drills/details/fixed-distance-passing-receiving-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "165fe0df-2036-5755-8a4e-c814fbaf2b24",
+      "team_id": null,
+      "name": "32. Receiving With Back to Goal",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players receive with pressure behind and decide to turn or set. It teaches realistic forward play for central players.",
+      "setup": "- Create 15x20 yard channels. Server plays into receiver with back to goal; defender starts behind; target waits opposite the server.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Protect ball first",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "165fe0df-2036-5755-8a4e-c814fbaf2b24",
+          "label": "Receiving With Back to Goal (Turn or Set)",
+          "url": "https://soccerxpert.com/drills/details/trapping-back-to-goal",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b3a9a9dd-a161-5d3d-bd8c-1016a45b283e",
+      "team_id": null,
+      "name": "33. Receiving Facing Defender",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players receive while a defender approaches from the front. It teaches first touch away from pressure and quick decisions.",
+      "setup": "- Create 20x30 yard grids with groups of three. One player serves across to a receiver while a defender closes from the opposite side.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Touch away from defender",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b3a9a9dd-a161-5d3d-bd8c-1016a45b283e",
+          "label": "Receiving Facing Defender (First Touch Away)",
+          "url": "https://soccerxpert.com/drills/details/trapping-facing-defender",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "38d8bb95-0c00-5cb8-820f-0abdb691ffc8",
+      "team_id": null,
+      "name": "34. First Touch Out of Pressure",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players receive and exit through the least pressured gate. It trains scanning and purposeful first touch.",
+      "setup": "- Set 12x12 yard boxes with three colored gates. Server passes to receiver; coach or defender indicates pressure as ball travels.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "38d8bb95-0c00-5cb8-820f-0abdb691ffc8",
+          "label": "First Touch Out of Pressure (Scan + Exit)",
+          "url": "https://soccerxpert.com/drills/details/1v1-escape-pressure-from-behind",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "10a87993-4498-55dd-b01c-af67ac70627c",
+      "team_id": null,
+      "name": "35. Aerial Receiving and Return",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players control tossed or chipped service and return cleanly. It builds confidence with bouncing and flighted balls.",
+      "setup": "- Create a 20-yard circle. Servers outside deliver age-appropriate tosses or chips to receivers inside, who control and pass back.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Cushion ball down",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "10a87993-4498-55dd-b01c-af67ac70627c",
+          "label": "Aerial Receiving and Return (Control + Pass)",
+          "url": "https://soccerxpert.com/drills/details/id1207",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "07cde9e8-3ec3-50b0-bc90-aa90d9407136",
+      "team_id": null,
+      "name": "36. Checking Away to Receive",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players check away from a cone defender before receiving. It teaches separation and timing before the first touch.",
+      "setup": "- Set 12x15 yard stations. Receiver starts near a cone defender, checks away, checks back, receives from server, and plays to target.",
+      "coaching_points": "- Change speed to separate\n- Show at an angle\n- Receive on half-turn\n- Call for ball late",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "07cde9e8-3ec3-50b0-bc90-aa90d9407136",
+          "label": "Checking Away to Receive (Separation + Touch)",
+          "url": "https://soccerxpert.com/drills/soccer-receiving-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "731775ed-cdc8-5782-b82e-191e3d05b652",
+      "team_id": null,
+      "name": "37. Receiving Between Lines",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players receive in a middle zone and play forward. It teaches body shape and awareness in central spaces.",
+      "setup": "- Create a 15x25 yard channel split into three zones. Server in one end zone, receiver in middle, target in far end zone.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Find window before pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "731775ed-cdc8-5782-b82e-191e3d05b652",
+          "label": "Receiving Between Lines (Half-Turn)",
+          "url": "https://soccerxpert.com/drills/details/id1220",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "34c69d85-1ed3-5a23-944e-a2936e1a7c17",
+      "team_id": null,
+      "name": "38. Directional First Touch",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players take first touch toward a called target. It teaches control with intent rather than stopping the ball dead.",
+      "setup": "- Use a 15x15 yard grid with four colored gates. Server passes into receiver in center. Coach calls the exit gate as ball travels.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Touch into space",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "34c69d85-1ed3-5a23-944e-a2936e1a7c17",
+          "label": "Directional First Touch (Touch With Purpose)",
+          "url": "https://soccerxpert.com/drills/details/fixed-distance-passing-receiving-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "01a1216a-5bb6-588d-90e9-62215354cffb",
+      "team_id": null,
+      "name": "39. Receiving Under Contact",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Players receive while a defender applies shoulder-to-shoulder pressure. It teaches balance and secure possession.",
+      "setup": "- Create 10x12 yard grids. Server plays into attacker. Defender starts beside attacker and applies controlled body pressure.",
+      "coaching_points": "- Wide base before contact\n- Use far foot\n- Do not lean back\n- Secure ball before turn",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "01a1216a-5bb6-588d-90e9-62215354cffb",
+          "label": "Receiving Under Contact (Balance + Shield)",
+          "url": "https://soccerxpert.com/drills/details/trapping-back-to-goal",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "9fcd57d1-d115-5a5e-9778-32590e8f61b9",
+      "team_id": null,
+      "name": "40. Target Receiving and Layoff",
+      "category": "receiving",
+      "planned_duration_minutes": 15,
+      "description": "Target players receive, protect, and lay off to support. It teaches forward target play in a simple youth format.",
+      "setup": "- Create 15x20 yard channels with server, target, support runner, and defender. Server passes to target, target sets to support, then rotates.",
+      "coaching_points": "- Check shoulder early\n- Set pass softly\n- Use body to protect\n- Support runner talks early",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "9fcd57d1-d115-5a5e-9778-32590e8f61b9",
+          "label": "Target Receiving and Layoff (Set Pass)",
+          "url": "https://soccerxpert.com/drills/details/4v4-target-players",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "f36d2901-3811-5593-889c-144138fbd0b5",
+      "team_id": null,
+      "name": "41. 3v3 Plus 3 Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Three teams keep possession with neutral support. It teaches angles, scanning, and quick transition after loss.",
+      "setup": "- Create a 20x20 yard grid. Use three teams of three. Two teams possess together against the third team, then switch on a turnover.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "f36d2901-3811-5593-889c-144138fbd0b5",
+          "label": "3v3 Plus 3 Possession (Overload + Support)",
+          "url": "https://soccerxpert.com/drills/details/id1204",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "3f6d5d7b-5b3b-5ba6-8497-806e37b562fe",
+      "team_id": null,
+      "name": "42. 4v4 Endzone Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams keep the ball and score by finding a teammate in the endzone. It teaches possession with forward purpose.",
+      "setup": "- Create a 25x35 yard field with 5-yard endzones. Play 4v4 with one target or teammate entering the endzone to receive.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Penetrate when window opens",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "3f6d5d7b-5b3b-5ba6-8497-806e37b562fe",
+          "label": "4v4 Endzone Possession (Keep + Penetrate)",
+          "url": "https://soccerxpert.com/drills/details/endzone-possession-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "6eabbc0d-42db-5f85-ac41-f92eb5089921",
+      "team_id": null,
+      "name": "43. 4v4 Zone Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams use zones to stretch the field and connect short and longer passes. It teaches support beyond the ball.",
+      "setup": "- Create a 15x24 yard field split into three horizontal zones. Play 4v4 with support players or targets in end zones if numbers allow.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Use the far option",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "6eabbc0d-42db-5f85-ac41-f92eb5089921",
+          "label": "4v4 Zone Possession (Purposeful Keep Ball)",
+          "url": "https://soccerxpert.com/drills/details/id1220",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "be54e577-5597-57ea-b682-d33406426700",
+      "team_id": null,
+      "name": "44. 4v4 Corner Support Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams use corner players as outlets to keep the ball. It teaches using support behind and around pressure.",
+      "setup": "- Create a 25x25 yard grid with one support player in each corner. Two teams play 4v4 inside and can pass to corner support players.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Use corners to escape pressure",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "be54e577-5597-57ea-b682-d33406426700",
+          "label": "4v4 Corner Support Possession (Outlet Play)",
+          "url": "https://soccerxpert.com/drills/details/4v4-plus-4-corner-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "fd3b18bf-6aee-55ac-ba80-aad10bc16372",
+      "team_id": null,
+      "name": "45. 4v4 Plus Neutral Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "A neutral player creates overloads for the team in possession. It teaches finding the extra player and changing tempo.",
+      "setup": "- Create a 25x30 yard grid. Play 4v4 plus one neutral who always plays with the team in possession.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Find the free player",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "fd3b18bf-6aee-55ac-ba80-aad10bc16372",
+          "label": "4v4 Plus Neutral Possession (Find Extra Player)",
+          "url": "https://soccerxpert.com/drills/details/4v4-plus-1-corner-support-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "a2dd7c10-39ad-5a49-a058-7f64ad05668e",
+      "team_id": null,
+      "name": "46. Triangle Goal Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams keep possession and score through a central triangle goal. It teaches patience, angles, and timing final passes.",
+      "setup": "- Create a 35x35 yard grid with a 5-yard triangle goal in the center. Play 4v4 or 5v5 with a goalkeeper or neutral inside triangle if desired.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Change angle before scoring pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "a2dd7c10-39ad-5a49-a058-7f64ad05668e",
+          "label": "Triangle Goal Possession (Central Penetration)",
+          "url": "https://soccerxpert.com/drills/details/triangle-goal-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e7fcd65b-029a-5e3b-8c18-31a6c775a9dc",
+      "team_id": null,
+      "name": "47. Four-Corner Possession",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams score by receiving in corner boxes. It teaches spreading out, switching play, and recognizing open space.",
+      "setup": "- Create a 40x40 yard grid with 5x5 yard boxes in each corner. Play two teams; score by passing to a teammate checking into a corner box.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Switch before forcing pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e7fcd65b-029a-5e3b-8c18-31a6c775a9dc",
+          "label": "Four-Corner Possession (Switching Play)",
+          "url": "https://soccerxpert.com/drills/details/id1266",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "34eb79f3-1e39-5c92-a69c-948cc556b30e",
+      "team_id": null,
+      "name": "48. Keep-Away With Targets",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams keep the ball and connect to target players on the outside. It teaches playing out of pressure with support.",
+      "setup": "- Create a 25x30 yard grid. Play 4v4 inside with one target on each end line. Teams score by connecting target to target.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Support after target pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "34eb79f3-1e39-5c92-a69c-948cc556b30e",
+          "label": "Keep-Away With Targets (Support + Direction)",
+          "url": "https://soccerxpert.com/drills/details/4v4-target-players",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "6b7ce780-8f00-5d08-b2a4-af998ade4311",
+      "team_id": null,
+      "name": "49. Possession to Gates",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Teams keep the ball and score by passing through small gates. It rewards possession with purposeful penetration.",
+      "setup": "- Create a 30x30 yard grid with four 3-yard gates inside. Play 4v4 or 5v5. Teams score by completing a pass through any gate to a teammate.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Do not force closed gate",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "6b7ce780-8f00-5d08-b2a4-af998ade4311",
+          "label": "Possession to Gates (Keep + Split)",
+          "url": "https://soccerxpert.com/drills/soccer-possession-drills/1000",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "a08b079f-c694-552d-a969-8f9babb6647b",
+      "team_id": null,
+      "name": "50. Transition Keep Ball",
+      "category": "possession",
+      "planned_duration_minutes": 20,
+      "description": "Two teams react immediately when possession changes. It teaches quick counter-pressing and spreading out after winning the ball.",
+      "setup": "- Create a 25x25 yard grid. Play 5v5 keep-away. When a team wins it, they must complete the next pass to score a transition point.",
+      "coaching_points": "- React on loss\n- First pass after win is safe\n- Spread quickly after regain\n- Press together",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "a08b079f-c694-552d-a969-8f9babb6647b",
+          "label": "Transition Keep Ball (Regain + Secure)",
+          "url": "https://soccerxpert.com/drills/details/4v3-plus-3-continuous-transaction-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "df0685ea-f2c2-520f-b4ae-72aca17ba056",
+      "team_id": null,
+      "name": "51. 3v1 Rondo",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Three attackers keep the ball against one defender. It is the simplest rondo for support angles and first touch.",
+      "setup": "- Create 8x8 yard grids. Three attackers form a triangle around one defender. Rotate defender after a win or 60 seconds.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "df0685ea-f2c2-520f-b4ae-72aca17ba056",
+          "label": "3v1 Rondo (Angles + First Touch)",
+          "url": "https://soccerxpert.com/drills/details/3v1-rondo-drill",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "8bcc71d9-619c-5c24-8634-f3cf5dd58fc4",
+      "team_id": null,
+      "name": "52. 4v1 Rondo",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Four attackers use the sides of a square against one defender. It teaches body shape, passing lanes, and patience.",
+      "setup": "- Create 10x10 yard grids. Four attackers stay around the outside with one defender inside. Rotate after defender wins ball or timed interval.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Stay on different sides",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "8bcc71d9-619c-5c24-8634-f3cf5dd58fc4",
+          "label": "4v1 Rondo (Support Shape)",
+          "url": "https://soccerxpert.com/drills/details/4v1-rondo-soccer",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b9f0b5ec-c987-5d5a-b931-0734c06b6c47",
+      "team_id": null,
+      "name": "53. 4v2 Rondo",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Four attackers keep possession against two defenders. It increases pressure while keeping the organization simple.",
+      "setup": "- Create 12x12 yard grids. Four outside attackers play against two inside defenders. Rotate both defenders after winning possession.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Split defenders when available",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b9f0b5ec-c987-5d5a-b931-0734c06b6c47",
+          "label": "4v2 Rondo (Pressure + Split Pass)",
+          "url": "https://soccerxpert.com/drills/soccer-possession-drills/1000",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "290397ec-16e9-58ba-aa27-42904e3bc4ac",
+      "team_id": null,
+      "name": "54. 5v2 Rondo",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Five attackers keep the ball against two defenders. It teaches larger support shape and fast ball movement.",
+      "setup": "- Create a 14x14 yard grid. Five attackers position around the outside with two defenders inside. Use one ball and rotate defenders by time.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Keep ball moving",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "290397ec-16e9-58ba-aa27-42904e3bc4ac",
+          "label": "5v2 Rondo (Ball Speed + Support)",
+          "url": "https://soccerxpert.com/drills/soccer-possession-drills/1000",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "4db0ec61-e072-5ada-a071-82fe7733e155",
+      "team_id": null,
+      "name": "55. 4v4 Plus 1 Rondo",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Two teams play in a tight grid with a neutral player. It teaches finding the extra player under game-like pressure.",
+      "setup": "- Create a 15x15 yard grid. Play 4v4 plus one neutral who plays with the team in possession. Score by completing passes.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Use neutral to change angle",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "4db0ec61-e072-5ada-a071-82fe7733e155",
+          "label": "4v4 Plus 1 Rondo (Find Neutral)",
+          "url": "https://soccerxpert.com/drills/details/4v4-plus-1-corner-support-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "f6464af5-ebbb-52cb-996f-aa91644c6819",
+      "team_id": null,
+      "name": "56. 4v4 Corner Rondo",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Teams use corner support players to keep possession. It teaches support angles outside the immediate pressure.",
+      "setup": "- Create a 25x25 yard grid with four corner players. Play 4v4 inside. Team in possession may use corner players as bounce options.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Use support before pressure traps you",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "f6464af5-ebbb-52cb-996f-aa91644c6819",
+          "label": "4v4 Corner Rondo (Support Outlets)",
+          "url": "https://soccerxpert.com/drills/details/4v4-plus-4-corner-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "366ba60f-23e9-54d1-9efb-d2327e12d410",
+      "team_id": null,
+      "name": "57. Directional Rondo to Targets",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Teams keep possession and play into end targets. It connects rondo habits to forward play.",
+      "setup": "- Create a 15x25 yard grid with target players on both ends. Play 4v4 inside. Team scores by connecting from one target to the other.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Face forward when possible",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "366ba60f-23e9-54d1-9efb-d2327e12d410",
+          "label": "Directional Rondo to Targets (Keep + Play Forward)",
+          "url": "https://soccerxpert.com/drills/details/4v4-target-players",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b06ab05d-eddc-53e8-9a0f-f1d5bf964309",
+      "team_id": null,
+      "name": "58. Transition Rondo 4v4 Plus 3",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Players change roles quickly after a turnover. It teaches counter-pressing and immediate support.",
+      "setup": "- Create a 10x20 yard area. Use two teams of four plus three support players. Possession team uses supports; defenders transition when they win it.",
+      "coaching_points": "- React first after turnover\n- Secure first pass\n- Support close and wide\n- Press as a group",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b06ab05d-eddc-53e8-9a0f-f1d5bf964309",
+          "label": "Transition Rondo 4v4 Plus 3 (React + Secure)",
+          "url": "https://soccerxpert.com/drills/details/4v3-plus-3-continuous-transaction-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e5b62f0a-ff8d-5b4b-8e1b-643b8eb99875",
+      "team_id": null,
+      "name": "59. Rondo With Split Passes",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Attackers score bonus points by passing between defenders. It teaches patience and recognizing penetration lanes.",
+      "setup": "- Create a 12x12 yard grid. Play 4v2 or 5v2. Attackers keep possession and earn extra point for a clean split pass.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Split only when lane is open",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e5b62f0a-ff8d-5b4b-8e1b-643b8eb99875",
+          "label": "Rondo With Split Passes (Penetration Lane)",
+          "url": "https://soccerxpert.com/drills/details/4v1-rondo-soccer",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "2b638db2-4ec8-5de9-b32f-4f90fe885751",
+      "team_id": null,
+      "name": "60. Rondo to Mini Goals",
+      "category": "rondos",
+      "planned_duration_minutes": 15,
+      "description": "Possession team keeps ball then finishes into mini goals after a target number of passes. It adds purpose to the rondo.",
+      "setup": "- Create a 15x20 yard grid with two mini goals outside one end. Play 4v2 or 5v2. After five passes, attackers can score in either mini goal.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Speed up after pass count",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "2b638db2-4ec8-5de9-b32f-4f90fe885751",
+          "label": "Rondo to Mini Goals (Keep + Finish)",
+          "url": "https://soccerxpert.com/drills/details/id1201",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "5817a341-b7f3-5361-b07b-5d6c19276672",
+      "team_id": null,
+      "name": "61. Finishing From Layoffs",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Players receive a set pass and finish quickly. It teaches preparation touch, timing, and composed shooting.",
+      "setup": "- Use the top of the penalty area or a 20x25 yard shooting zone. One line serves to a set player, who lays off for a first-time or two-touch finish.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "5817a341-b7f3-5361-b07b-5d6c19276672",
+          "label": "Finishing From Layoffs (Set + Strike)",
+          "url": "https://soccerxpert.com/drills/details/finishing-in-front-of-goal",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "277b6dd2-cfbb-508b-9273-239dbdbd29db",
+      "team_id": null,
+      "name": "62. 1v1 Finishing to Goal",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Attackers go at a defender and finish on goal. It teaches creating a shot under pressure.",
+      "setup": "- Use a 20x25 yard channel to goal. Attacker starts with ball, defender starts 5 yards away, goalkeeper optional.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Attack at speed",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "277b6dd2-cfbb-508b-9273-239dbdbd29db",
+          "label": "1v1 Finishing to Goal (Beat + Shoot)",
+          "url": "https://soccerxpert.com/drills/soccer-defending-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "683f97d4-bc59-5e35-bf9c-f9ba669a4137",
+      "team_id": null,
+      "name": "63. Diamond Shooting 1v1",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Players combine passes then play 1v1 to finish. It adds a competitive twist to shooting repetition.",
+      "setup": "- Set a diamond near the penalty area with 4 cones. Players pass through the diamond pattern, then attacker receives and plays 1v1 to goal.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- First touch creates shot",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "683f97d4-bc59-5e35-bf9c-f9ba669a4137",
+          "label": "Diamond Shooting 1v1 (Combination + Finish)",
+          "url": "https://soccerxpert.com/drills/soccer-defending-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "0e63f067-ad72-53e0-ba35-e214ff7851b8",
+      "team_id": null,
+      "name": "64. Crossing and Finishing",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Wide players serve balls for central runners. It teaches timing runs and finishing from wide service.",
+      "setup": "- Use half field or a 35x45 yard area. Place wide servers near channels and two finishing lines at the top of the box. Goalkeeper optional.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Time run, do not wait flat",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "0e63f067-ad72-53e0-ba35-e214ff7851b8",
+          "label": "Crossing and Finishing (Wide Service)",
+          "url": "https://soccerxpert.com/drills/soccer-crossing-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b0b72406-12f8-563c-bc37-e8bcab83f63b",
+      "team_id": null,
+      "name": "65. Combination Finishing",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Players combine with a wall pass before shooting. It teaches quick passing around pressure and finishing in stride.",
+      "setup": "- Set a 25x30 yard area to goal. Attacker passes to support player, receives return pass around a cone defender, and finishes.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Shoot in stride",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b0b72406-12f8-563c-bc37-e8bcab83f63b",
+          "label": "Combination Finishing (Wall Pass + Shot)",
+          "url": "https://soccerxpert.com/drills/soccer-crossing-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "7ff43781-e843-55a6-8f98-60a123d19de8",
+      "team_id": null,
+      "name": "66. Small-Sided Shooting Game",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Teams play a small-sided game with frequent shooting chances. It teaches finishing decisions in realistic traffic.",
+      "setup": "- Create a 40x40 yard field with two goals. Play 5v5 or 6v6 with goalkeepers if available. Keep restarts quick.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Shoot when window opens",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "7ff43781-e843-55a6-8f98-60a123d19de8",
+          "label": "Small-Sided Shooting Game (Game-Like Finishing)",
+          "url": "https://soccerxpert.com/drills/details/small-sided-shooting-finishing",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e0ed546c-210c-524d-ad26-f972f6adb791",
+      "team_id": null,
+      "name": "67. Four-Goal Finishing Game",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Teams attack multiple small goals to create shooting angles. It rewards quick decisions and changing point of attack.",
+      "setup": "- Create a 30x35 yard field with two small goals on each end line. Play 4v4 or 5v5. Teams can score in either goal they attack.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Change angle before shot",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e0ed546c-210c-524d-ad26-f972f6adb791",
+          "label": "Four-Goal Finishing Game (Angles + Decisions)",
+          "url": "https://soccerxpert.com/drills/details/id1201",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "7e461d27-cd82-5fa8-9388-1060e0987925",
+      "team_id": null,
+      "name": "68. Turn and Finish",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Players receive with back to goal, turn, and shoot. It teaches first touch, shielding, and finishing quickly.",
+      "setup": "- Use a 15x20 yard channel facing goal. Server plays into attacker with back to goal near top of box. Defender optional behind attacker.",
+      "coaching_points": "- Open body early\n- First touch out of pressure\n- Check shoulder before ball arrives\n- Use back foot when available\n- Set ball out of feet\n- Pick corner before strike",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "7e461d27-cd82-5fa8-9388-1060e0987925",
+          "label": "Turn and Finish (Receive Back to Goal)",
+          "url": "https://soccerxpert.com/drills/details/trapping-back-to-goal",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "194a1135-7855-52db-9068-9999371a4e65",
+      "team_id": null,
+      "name": "69. Rebound Finishing",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Players shoot, then follow for rebounds. It builds the habit of staying active after the strike.",
+      "setup": "- Use one goal with a goalkeeper or rebound server. Shooters line up 15-20 yards out. After each shot, player follows to finish any rebound.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Keep running after shot",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "194a1135-7855-52db-9068-9999371a4e65",
+          "label": "Rebound Finishing (Follow Shot)",
+          "url": "https://soccerxpert.com/drills/details/small-sided-shooting-finishing",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "d92c2fac-819a-5283-97e0-4b7ea80f3275",
+      "team_id": null,
+      "name": "70. Endzone to Finish",
+      "category": "finishing",
+      "planned_duration_minutes": 20,
+      "description": "Teams must play into an endzone before shooting. It teaches final pass timing and finishing after penetration.",
+      "setup": "- Create a 30x40 yard field with a 5-yard endzone before goal. Teams play 4v4; a player must receive in endzone before finishing.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Arrive as ball arrives",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "d92c2fac-819a-5283-97e0-4b7ea80f3275",
+          "label": "Endzone to Finish (Final Pass + Shot)",
+          "url": "https://soccerxpert.com/drills/details/endzone-possession-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "81ce0775-d0fc-5b1d-adb4-79ad40fc9588",
+      "team_id": null,
+      "name": "71. First Defender Without Opposition",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Players rehearse approach, angle, and stance without live tackling. It teaches the first defender role clearly.",
+      "setup": "- Create a 30x30 yard area. Players work in pairs with one ball, moving through approach and jockey technique at coach pace.",
+      "coaching_points": "- Close space under control\n- Side-on body shape\n- Force play one way\n- Win it or delay",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "81ce0775-d0fc-5b1d-adb4-79ad40fc9588",
+          "label": "First Defender Technique (Approach + Stance)",
+          "url": "https://soccerxpert.com/drills/details/teaching-1st-defender-wo-opposition",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "1d2aa429-315a-5387-94bb-431b38e21f7b",
+      "team_id": null,
+      "name": "72. 1v1 Defending the Dribble",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defenders stop an attacker from dribbling through a gate. It isolates pressure, patience, and body shape.",
+      "setup": "- Create 20x20 yard grids with two scoring gates. Attacker starts with ball; defender starts opposite and closes on first touch.",
+      "coaching_points": "- Close space under control\n- Side-on body shape\n- Force play one way\n- Win it or delay",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "1d2aa429-315a-5387-94bb-431b38e21f7b",
+          "label": "1v1 Defending the Dribble (Delay + Win)",
+          "url": "https://soccerxpert.com/drills/details/1v1-defending-the-dribble",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "88803177-4013-5094-9049-f0e1bff0b14f",
+      "team_id": null,
+      "name": "73. Channel Defending 1v1",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defenders protect a narrow channel and force the attacker wide. It teaches angle of pressure and patience.",
+      "setup": "- Create 10x18 yard channels with a gate at the end. Attacker tries to dribble through; defender starts 5 yards away.",
+      "coaching_points": "- Close space under control\n- Side-on body shape\n- Force play one way\n- Win it or delay\n- Do not dive in",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "88803177-4013-5094-9049-f0e1bff0b14f",
+          "label": "Channel Defending 1v1 (Angle + Delay)",
+          "url": "https://soccerxpert.com/drills/details/1v1-defending-the-dribble",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "8817ef7c-7c8b-5e48-afdd-32fa8c1d331c",
+      "team_id": null,
+      "name": "74. Recovery Defending 1v1",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defender chases from behind to delay or win the ball. It teaches recovery runs and smart pressure.",
+      "setup": "- Create a 15x25 yard channel to a small goal. Attacker starts 3 yards ahead with ball; defender starts behind and recovers on coach signal.",
+      "coaching_points": "- Sprint to recover line\n- Slow down before tackle\n- Force away from goal\n- Stay in play after first block",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "8817ef7c-7c8b-5e48-afdd-32fa8c1d331c",
+          "label": "Recovery Defending 1v1 (Chase + Delay)",
+          "url": "https://soccerxpert.com/drills/soccer-attacking-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "67b3d112-4769-5056-80cb-d437841006de",
+      "team_id": null,
+      "name": "75. Pressure Cover 2v2",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Pairs defend two attackers with pressure and cover. It teaches communication and second defender support.",
+      "setup": "- Create 18x22 yard grids with two small goals. Play 2v2 to goals. Rotate pairs every 60-90 seconds.",
+      "coaching_points": "- First defender pressures ball\n- Second defender covers space\n- Talk early\n- Step together when pass travels",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "67b3d112-4769-5056-80cb-d437841006de",
+          "label": "Pressure Cover 2v2 (First + Second Defender)",
+          "url": "https://soccerxpert.com/drills/details/1v1-defending-the-dribble",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "eecd2b9b-7f7d-51ef-97a7-191a29a0f3d2",
+      "team_id": null,
+      "name": "76. Defending Through Gates",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defenders score by forcing attackers away from target gates. It teaches steering and denying penetration.",
+      "setup": "- Create a 20x20 yard grid with three gates on one end. Attacker tries to dribble through any gate; defender protects and counters to opposite line.",
+      "coaching_points": "- Close space under control\n- Side-on body shape\n- Force play one way\n- Win it or delay\n- Show attacker away from best gate",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "eecd2b9b-7f7d-51ef-97a7-191a29a0f3d2",
+          "label": "Defending Through Gates (Steer + Deny)",
+          "url": "https://soccerxpert.com/drills/details/1v1-defending-the-dribble",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "63d82b52-0b71-5e88-aece-9c688645146a",
+      "team_id": null,
+      "name": "77. Compact Defending 3v3",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defending team protects a central zone and shifts together. It teaches compactness without complex team tactics.",
+      "setup": "- Create a 25x30 yard field with two mini goals. Play 3v3. Mark a central lane defenders try to protect as ball moves.",
+      "coaching_points": "- Stay connected\n- Shift with the ball\n- Protect middle first\n- Press when touch is loose",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "63d82b52-0b71-5e88-aece-9c688645146a",
+          "label": "Compact Defending 3v3 (Shift + Protect Middle)",
+          "url": "https://soccerxpert.com/drills/details/4v4-shape-positioning",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "6a1d779e-0d98-5226-910c-cfabffd45fb3",
+      "team_id": null,
+      "name": "78. Defensive Transition Game",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Teams react immediately after losing possession. It teaches counter-pressure and recovery shape.",
+      "setup": "- Create a 25x25 yard grid. Play 4v4 keep-away. On turnover, the team that lost it has five seconds to win it back.",
+      "coaching_points": "- React on loss\n- Nearest player pressures\n- Others close passing lanes\n- Recover goal side if press fails",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "6a1d779e-0d98-5226-910c-cfabffd45fb3",
+          "label": "Defensive Transition Game (Counter-Press)",
+          "url": "https://soccerxpert.com/drills/details/4v3-plus-3-continuous-transaction-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "dd21d460-e945-5fe3-aa3e-fbccd3550db1",
+      "team_id": null,
+      "name": "79. Blocking Shots in Pairs",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defenders close down and block without diving in. It teaches safe shot blocking and body control.",
+      "setup": "- Use a 15x20 yard channel facing a small goal. Attacker receives from server and prepares to shoot; defender closes from 5-7 yards away.",
+      "coaching_points": "- Close fast, slow late\n- Turn body slightly on block\n- Hands tight to body\n- Stay on feet",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "dd21d460-e945-5fe3-aa3e-fbccd3550db1",
+          "label": "Blocking Shots in Pairs (Close + Block)",
+          "url": "https://soccerxpert.com/drills/details/1v1-defending-the-dribble",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e201367f-6d80-5dd4-b6f7-11a54bab0b74",
+      "team_id": null,
+      "name": "80. Defending Target Players",
+      "category": "defending",
+      "planned_duration_minutes": 20,
+      "description": "Defenders deny passes into target players and recover when ball enters. It teaches marking, intercepting, and pressure after entry pass.",
+      "setup": "- Create a 25x30 yard grid with target players on end lines. Play 4v4 inside. Teams try to connect to targets while defenders deny lanes.",
+      "coaching_points": "- See ball and target\n- Step when pass travels\n- Stay touch-tight near target\n- Recover goal side",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e201367f-6d80-5dd4-b6f7-11a54bab0b74",
+          "label": "Defending Target Players (Deny + Recover)",
+          "url": "https://soccerxpert.com/drills/details/4v4-target-players",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "af5ae7a7-eefc-5b8e-9476-9d623fb28f71",
+      "team_id": null,
+      "name": "81. Width and Depth 4v4",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Players use field shape to create passing options. It teaches basic attacking spacing in a small-sided format.",
+      "setup": "- Create a 40x25 yard field with small goals. Play 4v4. Coach freezes briefly to show width, depth, and support angles.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Make field big in possession",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "af5ae7a7-eefc-5b8e-9476-9d623fb28f71",
+          "label": "4v4 Shape and Positioning (Width + Depth)",
+          "url": "https://soccerxpert.com/drills/details/4v4-shape-positioning",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "931f5f57-4314-5aec-9f0f-320aa41eba96",
+      "team_id": null,
+      "name": "82. Playing Wide From the Back",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Teams build out by finding wide outlets. It teaches using outside space instead of forcing central passes.",
+      "setup": "- Create a 40x30 yard field split into wide channels. Team starts from goalkeeper or end target and tries to play into wide channel before going forward.",
+      "coaching_points": "- Open wide early\n- Center backs support behind ball\n- Do not force middle pass\n- Play forward when wide player can turn",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "931f5f57-4314-5aec-9f0f-320aa41eba96",
+          "label": "Playing Wide From the Back (Build Out)",
+          "url": "https://soccerxpert.com/drills/details/id1231",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e75a54e6-b6bd-5adc-8a09-727c646a7390",
+      "team_id": null,
+      "name": "83. Switching Play Through Corners",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Teams move ball from one side to the other using support. It teaches recognizing pressure and changing the point of attack.",
+      "setup": "- Create a 40x40 yard grid with corner boxes. Play 5v5. Teams score by connecting passes into two different corner boxes.",
+      "coaching_points": "- Look away from pressure\n- Support behind the ball\n- Receive facing the field\n- Switch before space closes",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e75a54e6-b6bd-5adc-8a09-727c646a7390",
+          "label": "Switching Play Through Corners (Change Point)",
+          "url": "https://soccerxpert.com/drills/details/id1266",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "5fc5cdbc-e518-5a91-9e4a-3ca2d3e866a4",
+      "team_id": null,
+      "name": "84. Thirds Shape 4v4",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Players learn simple team shape across left, center, and right channels. It teaches spacing without overloading tactics.",
+      "setup": "- Create a 40x25 yard field divided into three vertical thirds. Play 4v4 with players encouraged to occupy different thirds.",
+      "coaching_points": "- Keep one player wide\n- Support central player\n- Move as ball moves\n- Do not crowd the ball",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "5fc5cdbc-e518-5a91-9e4a-3ca2d3e866a4",
+          "label": "Thirds Shape 4v4 (Spacing + Roles)",
+          "url": "https://soccerxpert.com/drills/details/4v4-shape-positioning",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "4afd8beb-420c-5398-8250-0b97534bec5d",
+      "team_id": null,
+      "name": "85. Target Player Build-Up",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Teams use a target player to connect forward. It teaches playing into feet, supporting underneath, and joining attack.",
+      "setup": "- Create a 35x25 yard field with target players on each end. Play 4v4 inside. Score by playing into target and receiving the return pass.",
+      "coaching_points": "- Support target quickly\n- Target sets ball safe\n- Wide players stretch field\n- Forward pass when target is open",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "4afd8beb-420c-5398-8250-0b97534bec5d",
+          "label": "Target Player Build-Up (Play Into Feet)",
+          "url": "https://soccerxpert.com/drills/details/4v4-target-players",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "ee5fafb0-ef73-5dfd-8594-d144336149ac",
+      "team_id": null,
+      "name": "86. Overload to Goal 3v2",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Attackers use a numbers-up moment to create a shot. It teaches pass or dribble decisions near goal.",
+      "setup": "- Create a 25x30 yard field to one goal or two mini goals. Three attackers start against two defenders and attack quickly.",
+      "coaching_points": "- Commit defender before passing\n- Support wide and central\n- Finish before recovery arrives\n- Defenders delay first",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "ee5fafb0-ef73-5dfd-8594-d144336149ac",
+          "label": "Overload to Goal 3v2 (Decision to Finish)",
+          "url": "https://soccerxpert.com/drills/soccer-attacking-drills",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b749f470-19a8-5231-a407-ee9161619725",
+      "team_id": null,
+      "name": "87. Counterattack From Regain",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Team wins the ball and attacks quickly into space. It teaches first pass after regain and forward runs.",
+      "setup": "- Create a 30x40 yard field with two small goals. Start with possession team in middle; defending team counters to goal immediately after winning ball.",
+      "coaching_points": "- First pass forward if open\n- Wide runners sprint early\n- Keep attack simple\n- Secure ball if counter is closed",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b749f470-19a8-5231-a407-ee9161619725",
+          "label": "Counterattack From Regain (Forward First)",
+          "url": "https://soccerxpert.com/drills/details/4v3-plus-3-continuous-transaction-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "e84a6449-0071-5aa7-8634-0a324e53a9ba",
+      "team_id": null,
+      "name": "88. Pressing Trigger 4v4",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Players learn simple cues to press together. It teaches when to step instead of chasing randomly.",
+      "setup": "- Create a 30x25 yard field. Play 4v4. Coach identifies triggers: bad touch, back pass, slow pass, player facing own goal.",
+      "coaching_points": "- Press on bad touch\n- Nearest player goes\n- Teammates lock nearby options\n- Stop if press is beaten",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "e84a6449-0071-5aa7-8634-0a324e53a9ba",
+          "label": "Pressing Trigger 4v4 (Step Together)",
+          "url": "https://soccerxpert.com/drills/details/4v3-plus-3-continuous-transaction-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b2572348-5829-5fc0-aeee-f4e27f61a432",
+      "team_id": null,
+      "name": "89. Building Through Zones",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Teams connect from defensive zone to attacking zone. It teaches patience, support, and playing forward at the right time.",
+      "setup": "- Create a 20x40 yard field split into three horizontal zones. Play 5v5. Teams score by moving the ball through each zone before finishing.",
+      "coaching_points": "- Support behind and ahead\n- Open body to play forward\n- Use safe pass when blocked\n- Move after pass to next zone",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b2572348-5829-5fc0-aeee-f4e27f61a432",
+          "label": "Building Through Zones (Progress the Ball)",
+          "url": "https://soccerxpert.com/drills/details/id1220",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "b1813321-b0d1-5814-b5cf-ae54364772c0",
+      "team_id": null,
+      "name": "90. Rest Defense in Possession",
+      "category": "tactical",
+      "planned_duration_minutes": 20,
+      "description": "Players keep cover behind the attack during possession. It teaches simple balance and protection against counters.",
+      "setup": "- Create a 35x30 yard field. Play 5v5 to goals. Assign one player to stay connected behind the ball when team attacks.",
+      "coaching_points": "- Keep cover behind ball\n- Do not all run ahead\n- Step up as team advances\n- Stop counter early",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "b1813321-b0d1-5814-b5cf-ae54364772c0",
+          "label": "Rest Defense in Possession (Balance Behind Ball)",
+          "url": "https://soccerxpert.com/drills/details/4v4-shape-positioning",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "dde3102b-ec4d-5bac-8f87-03476120176a",
+      "team_id": null,
+      "name": "91. 4v4 to Small Gates",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams play 4v4 and score by passing or dribbling through small gates. It emphasizes forward passing and movement.",
+      "setup": "- Create a 40x25 yard field with an 8-foot gate on each end line. Play 4v4. Score by passing or dribbling through the opponent gate.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Play forward early when open",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "dde3102b-ec4d-5bac-8f87-03476120176a",
+          "label": "4v4 to Small Gates (Forward Play)",
+          "url": "https://soccerxpert.com/drills/details/id1201",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "87df34b7-548d-54b1-b710-4ad6e0c6ce29",
+      "team_id": null,
+      "name": "92. 4v4 With Target Players",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams use targets at each end to create realistic forward play. It teaches support around a forward pass.",
+      "setup": "- Create a 35x25 yard field. Play 4v4 inside with one target player behind each end line. Score by playing into target and receiving back.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Support after forward pass",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "87df34b7-548d-54b1-b710-4ad6e0c6ce29",
+          "label": "4v4 With Target Players (Forward Connection)",
+          "url": "https://soccerxpert.com/drills/details/4v4-target-players",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "f7086cbd-a04b-543e-847f-2e2c6a1f990e",
+      "team_id": null,
+      "name": "93. 4v4 Zone Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams play through zones to create possession with purpose. It teaches short and longer passing choices.",
+      "setup": "- Create a 15x24 yard field split into three zones. Play 4v4 with quick restarts and coach spacing between rounds.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Use next zone when open",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "f7086cbd-a04b-543e-847f-2e2c6a1f990e",
+          "label": "4v4 Zone Game (Possession With Purpose)",
+          "url": "https://soccerxpert.com/drills/details/id1220",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "adb65db8-1df4-5eba-a57e-cb8f66e76f74",
+      "team_id": null,
+      "name": "94. 4v4 Shape and Positioning",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Players play 4v4 with field thirds to guide spacing. It teaches simple roles and positional awareness.",
+      "setup": "- Create a 40x25 yard field divided into thirds. Play 4v4 to small goals with coaching on spacing and support.",
+      "coaching_points": "- Stay connected\n- Use width\n- Support central option\n- Recover shape on loss",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "adb65db8-1df4-5eba-a57e-cb8f66e76f74",
+          "label": "4v4 Shape and Positioning (Spacing Game)",
+          "url": "https://soccerxpert.com/drills/details/4v4-shape-positioning",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "4478614f-0672-594c-8324-ecb0f7fa1d68",
+      "team_id": null,
+      "name": "95. 3v3 Plus 3 Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Three teams rotate between possession and defending. It creates many decisions with natural overloads.",
+      "setup": "- Create a 25x25 yard grid. Three teams of three. Two teams combine to keep ball from the third team; switch on turnover or time.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "4478614f-0672-594c-8324-ecb0f7fa1d68",
+          "label": "3v3 Plus 3 Game (Overload Possession)",
+          "url": "https://soccerxpert.com/drills/details/id1204",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "f40df5ad-68c6-56de-b20e-a7e90e1adb14",
+      "team_id": null,
+      "name": "96. Endzone Small-Sided Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams score by receiving in an endzone. It encourages movement off the ball and passing into space.",
+      "setup": "- Create a 25x35 yard field with 5-yard endzones. Play 4v4 or 5v5. Score when a teammate receives a pass in the attacking endzone.",
+      "coaching_points": "- Create passing angles\n- Support near and far\n- Play away from pressure\n- Communicate early\n- Run into space, not standing still",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "f40df5ad-68c6-56de-b20e-a7e90e1adb14",
+          "label": "Endzone Small-Sided Game (Pass Into Space)",
+          "url": "https://soccerxpert.com/drills/details/endzone-possession-game",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "caf976d0-de14-5c55-bc07-f9cd1800283a",
+      "team_id": null,
+      "name": "97. Four-Goal Small-Sided Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams attack two goals and defend two goals. It teaches scanning, switching, and choosing the best option.",
+      "setup": "- Create a 30x25 yard field with two mini goals on each end line. Play 4v4 with normal restarts.",
+      "coaching_points": "- Head up before attacking\n- Switch if one goal is blocked\n- Defend as a group\n- Use quick restarts",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "caf976d0-de14-5c55-bc07-f9cd1800283a",
+          "label": "Four-Goal Small-Sided Game (Choice + Switch)",
+          "url": "https://soccerxpert.com/drills/details/id1201",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "f1b3c719-b3f8-51ea-9366-a5068041a205",
+      "team_id": null,
+      "name": "98. Wide Channel Small-Sided Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams get rewarded for using wide channels before scoring. It teaches width and service from wide areas.",
+      "setup": "- Create a 40x30 yard field with 5-yard wide channels. Play 5v5 to goals or mini goals. Award bonus for goal after wide-channel pass.",
+      "coaching_points": "- Get wide early\n- Support under wide player\n- Cross or pass with purpose\n- Recover centrally on loss",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "f1b3c719-b3f8-51ea-9366-a5068041a205",
+          "label": "Wide Channel Small-Sided Game (Width + Service)",
+          "url": "https://soccerxpert.com/drills/details/id1231",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "8894625c-7d32-59c6-bb6b-21e3edb1dbd4",
+      "team_id": null,
+      "name": "99. Transition Small-Sided Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Both teams attack immediately after winning the ball. It teaches quick reaction, counterattack, and recovery defending.",
+      "setup": "- Create a 30x35 yard field with two goals or four mini goals. Play 4v4 or 5v5. Coach keeps balls ready for fast restarts.",
+      "coaching_points": "- React on turnover\n- First look forward\n- Recover goal side\n- Keep tempo high",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "8894625c-7d32-59c6-bb6b-21e3edb1dbd4",
+          "label": "Transition Small-Sided Game (Turnover Reaction)",
+          "url": "https://soccerxpert.com/drills/details/4v3-plus-3-continuous-transaction-rondo",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    },
+    {
+      "id": "52475c0c-02c8-5e6c-a578-8d28c15b19d9",
+      "team_id": null,
+      "name": "100. Finish Zone Small-Sided Game",
+      "category": "small_sided_games",
+      "planned_duration_minutes": 20,
+      "description": "Teams must enter a finish zone before shooting. It teaches creating better chances instead of shooting too early.",
+      "setup": "- Create a 35x40 yard field with a 10-yard finish zone in front of each goal. Play 5v5. Shots only count from inside the finish zone.",
+      "coaching_points": "- Set ball out of feet\n- Pick corner before strike\n- Follow rebounds\n- Finish with composure\n- Combine to enter zone",
+      "equipment": "- Soccer balls\n- Cones\n- Training vests\n- Goals or mini goals",
+      "created_at": "$database_time_at_migration_execution",
+      "updated_at": "$database_time_at_migration_execution",
+      "created_by": null,
+      "player_count_guidance": null,
+      "field_size_guidance": null,
+      "tags": [],
+      "resources": [
+        {
+          "id": "$database_generated_uuid",
+          "drill_id": "52475c0c-02c8-5e6c-a578-8d28c15b19d9",
+          "label": "Finish Zone Small-Sided Game (Create Better Chances)",
+          "url": "https://soccerxpert.com/drills/details/small-sided-shooting-finishing",
+          "resource_type": "link",
+          "sort_order": 1,
+          "created_at": "$database_time_at_migration_execution",
+          "updated_at": "$database_time_at_migration_execution",
+          "created_by": null
+        }
+      ]
+    }
+  ]
+}
