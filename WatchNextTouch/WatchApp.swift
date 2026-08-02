@@ -127,44 +127,56 @@ struct WatchLive: View {
     var body: some View {
         ZStack {
             (state == .expired ? Color.yellow : Color.green).ignoresSafeArea()
-            VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
-                HStack(spacing: 4) {
-                    Text(activity.title).lineLimit(1).minimumScaleFactor(0.75)
-                    Spacer(minLength: 2)
-                    Text("\(index + 1)/\(practice.activities.count)")
-                }.font(.caption2)
-                Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
-                    .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
-                    .minimumScaleFactor(0.8)
-                Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
-                    .font(.caption2.bold())
-                if !activity.notes.isEmpty {
-                    VStack(alignment: .leading, spacing: 1) {
-                        ForEach(activity.notes.prefix(2), id: \.self) { Text("• \($0)").font(.caption2).lineLimit(1) }
+            ScrollView(.vertical) {
+                VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
+                    HStack(spacing: 4) {
+                        Text(activity.title).lineLimit(1).minimumScaleFactor(0.75)
+                        Spacer(minLength: 2)
+                    }.font(.caption)
+                    Text("Activity \(index + 1) of \(practice.activities.count)  ·  \(practice.totalMinutes)m total")
+                        .font(.caption2)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.75)
+                    Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
+                        .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
+                        .minimumScaleFactor(0.8)
+                    Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
+                        .font(.caption2.bold())
+                    if !activity.notes.isEmpty {
+                        VStack(alignment: .leading, spacing: 1) {
+                            ForEach(activity.notes.prefix(2), id: \.self) { Text("• \($0)").font(.caption2).lineLimit(1) }
+                        }
                     }
+                    HStack(spacing: 5) {
+                        Button { move(to: max(0, index - 1)) } label: { Image(systemName: "backward.end.fill") }
+                            .accessibilityLabel("Previous activity")
+                            .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
+                            .tint(Color.black.opacity(0.45))
+                        Button { togglePause() } label: { Image(systemName: state == .paused ? "play.fill" : "pause.fill") }
+                            .accessibilityLabel(state == .paused ? "Resume practice" : "Pause practice")
+                            .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
+                            .tint(.black)
+                        Button {
+                            if index < practice.activities.count - 1 { move(to: index + 1) }
+                        } label: { Image(systemName: "forward.end.fill") }
+                            .accessibilityLabel("Next activity")
+                            .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
+                            .tint(.black)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .buttonBorderShape(.circle)
+                    .controlSize(.small)
+
+                    // Keep this consequential action below the initial viewport.
+                    Button("Finish practice") { showingFinish = true }
+                        .font(.caption2)
+                        .padding(.top, 10)
                 }
-                Spacer(minLength: 2)
-                HStack(spacing: 5) {
-                    Button { move(to: max(0, index - 1)) } label: { Image(systemName: "backward.end.fill") }
-                        .accessibilityLabel("Previous activity")
-                        .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
-                    Button { togglePause() } label: { Image(systemName: state == .paused ? "play.fill" : "pause.fill") }
-                        .accessibilityLabel(state == .paused ? "Resume practice" : "Pause practice")
-                        .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
-                    Button {
-                        if index < practice.activities.count - 1 { move(to: index + 1) }
-                    } label: { Image(systemName: "forward.end.fill") }
-                        .accessibilityLabel("Next activity")
-                        .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
-                }
-                .buttonStyle(.borderedProminent)
-                .buttonBorderShape(.circle)
-                .controlSize(.small)
-                .tint(.black)
-                Button("Finish") { showingFinish = true }.font(.caption2)
+                .padding(.horizontal, NextTouchTheme.watchContentPadding)
+                .padding(.top, 2)
+                .padding(.bottom, 6)
             }
-            .padding(.horizontal, NextTouchTheme.watchContentPadding)
-            .padding(.vertical, 2)
+            .scrollIndicators(.hidden)
         }
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
