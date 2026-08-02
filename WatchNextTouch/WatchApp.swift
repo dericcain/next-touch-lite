@@ -166,6 +166,7 @@ struct WatchLive: View {
     @State private var pausedElapsed: TimeInterval = 0
     @State private var now = Date()
     @State private var showingFinish = false
+    @State private var showingNotes = false
 
     fileprivate enum LiveState: String, Codable { case running, paused, expired }
     private var activity: WatchActivity { practice.activities[index] }
@@ -183,7 +184,9 @@ struct WatchLive: View {
 
     var body: some View {
         ZStack {
-            (state == .expired ? Color.yellow : Color.green).ignoresSafeArea()
+            (state == .expired ? Color.yellow : Color.green)
+                .opacity(state == .paused ? 0.58 : 1)
+                .ignoresSafeArea()
             ScrollView(.vertical) {
                 VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
                     HStack {
@@ -203,19 +206,49 @@ struct WatchLive: View {
                             .minimumScaleFactor(0.75)
                         Spacer(minLength: 2)
                         if !activity.notes.isEmpty {
-                            Image(systemName: "text.bubble")
-                                .font(.caption)
-                                .accessibilityLabel("Coach notes available")
+                            Button { showingNotes = true } label: {
+                                Image(systemName: "info.circle")
+                                    .font(.caption)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel("Show coach notes")
                         }
                     }
-                    Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
-                        .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
-                        .minimumScaleFactor(0.8)
+                    HStack(spacing: 4) {
+                        Button { move(to: max(0, index - 1)) } label: {
+                            Image(systemName: "chevron.left")
+                                .font(.title3.bold())
+                                .frame(width: 30, height: 54)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Previous activity")
+                        .disabled(index == 0)
+
+                        Button { togglePause() } label: {
+                            Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
+                                .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
+                                .minimumScaleFactor(0.8)
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel(state == .paused ? "Resume timer" : "Pause timer")
+
+                        Button {
+                            if index < practice.activities.count - 1 { move(to: index + 1) }
+                        } label: {
+                            Image(systemName: "chevron.right")
+                                .font(.title3.bold())
+                                .frame(width: 30, height: 54)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Next activity")
+                        .disabled(index >= practice.activities.count - 1)
+                    }
                     Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
                         .font(.caption2.bold())
                     if let note = activity.notes.first {
                         HStack(spacing: 4) {
-                            Image(systemName: "text.bubble")
+                            Image(systemName: "info.circle")
                             Text(note).lineLimit(1)
                         }
                         .font(.caption2)
@@ -234,26 +267,6 @@ struct WatchLive: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    HStack(spacing: 5) {
-                        Button { move(to: max(0, index - 1)) } label: { Image(systemName: "backward.end.fill") }
-                            .accessibilityLabel("Previous activity")
-                            .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
-                            .tint(Color.black.opacity(0.45))
-                        Button { togglePause() } label: { Image(systemName: state == .paused ? "play.fill" : "pause.fill") }
-                            .accessibilityLabel(state == .paused ? "Resume practice" : "Pause practice")
-                            .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
-                            .tint(.black)
-                        Button {
-                            if index < practice.activities.count - 1 { move(to: index + 1) }
-                        } label: { Image(systemName: "forward.end.fill") }
-                            .accessibilityLabel("Next activity")
-                            .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
-                            .tint(.black)
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.circle)
-                    .controlSize(.small)
-
                     // Keep this consequential action below the initial viewport.
                     Button("Finish practice") { showingFinish = true }
                         .font(.caption2)
@@ -267,6 +280,9 @@ struct WatchLive: View {
         }
         .navigationBarBackButtonHidden()
         .toolbar(.hidden, for: .navigationBar)
+        .sheet(isPresented: $showingNotes) {
+            WatchNotesSheet(activity: activity)
+        }
         .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { tick in
             now = tick
             if state == .running && remaining == 0 { state = .expired }
@@ -362,6 +378,29 @@ struct WatchLive: View {
         startedAt = checkpoint.startedAt
         pausedAt = checkpoint.pausedAt
         pausedElapsed = checkpoint.pausedElapsed
+    }
+}
+
+private struct WatchNotesSheet: View {
+    let activity: WatchActivity
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("Coach notes").font(.headline)
+                Spacer()
+                Button("Done") { dismiss() }.font(.caption)
+            }
+            Text(activity.title).font(.caption.bold())
+            ForEach(activity.notes, id: \.self) { note in
+                HStack(alignment: .top, spacing: 5) {
+                    Image(systemName: "info.circle")
+                    Text(note).font(.caption2)
+                }
+            }
+        }
+        .padding()
     }
 }
 
