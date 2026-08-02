@@ -99,19 +99,60 @@ struct WatchPreflight: View {
     let practice: WatchPractice
 
     var body: some View {
-        VStack(spacing: 12) {
-            Spacer()
-            Text("READY TO COACH").font(.caption2)
-            Text(practice.title).font(.title2.bold()).multilineTextAlignment(.center)
-            Text("\(practice.totalMinutes)m total · \(practice.activities.count) activities")
-            Spacer()
-            NavigationLink { WatchLive(practice: practice) } label: {
-                Label("Start Practice", systemImage: "play.fill")
+        ScrollView(.vertical) {
+            VStack(spacing: 8) {
+                Text(practice.title)
+                    .font(.headline.bold())
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.8)
+
+                NavigationLink { WatchLive(practice: practice) } label: {
+                    Image(systemName: "play.fill")
+                        .font(.title3)
+                        .frame(width: 58, height: 58)
+                }
+                .accessibilityLabel("Start practice")
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.circle)
+                .tint(.green)
+
+                Text("\(practice.totalMinutes)m total · \(practice.activities.count) activities")
+                    .font(.caption2)
+
+                Divider()
+                    .padding(.vertical, 2)
+
+                VStack(alignment: .leading, spacing: 5) {
+                    ForEach(Array(practice.activities.enumerated()), id: \.element.id) { number, activity in
+                        HStack(spacing: 6) {
+                            Text("\(number + 1)")
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
+                                .frame(width: 14, alignment: .leading)
+                            VStack(alignment: .leading, spacing: 0) {
+                                Text(activity.title)
+                                    .font(.caption)
+                                    .lineLimit(1)
+                                if !activity.category.isEmpty {
+                                    Text(activity.category)
+                                        .font(.caption2)
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(1)
+                                }
+                            }
+                            Spacer(minLength: 4)
+                            Text("\(activity.minutes)m")
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
             }
-            .buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle(radius: NextTouchTheme.controlCornerRadius)).tint(.green)
-            Text("Downloaded · ready offline").font(.caption2).foregroundStyle(.secondary)
+            .padding(.horizontal, NextTouchTheme.watchContentPadding)
+            .padding(.vertical, 4)
         }
-        .padding().navigationTitle("Preflight")
+        .scrollIndicators(.hidden)
     }
 }
 
