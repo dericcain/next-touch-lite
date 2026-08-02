@@ -31,10 +31,10 @@ struct PracticeLibraryView: View {
             .alert("Delete practice?", isPresented: Binding(get: { deleteCandidate != nil }, set: { if !$0 { deleteCandidate = nil } })) { Button("Cancel", role: .cancel) {}; Button("Delete", role: .destructive) { if let deleteCandidate { store.delete(deleteCandidate) }; deleteCandidate = nil } } message: { Text("This removes the local plan. Any downloaded watch snapshot remains unchanged until the next sync.") }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(uiColor: .systemGroupedBackground).ignoresSafeArea())
+        .background(NextTouchTheme.pageBackground.ignoresSafeArea())
     }
 }
 
-private struct UpNextRow: View { let practice: Practice; var body: some View { HStack(spacing: 14) { Image(systemName: "calendar").font(.title3).foregroundStyle(.white).frame(width: 44, height: 44).background(Color.nextTouch, in: RoundedRectangle(cornerRadius: 4)); VStack(alignment: .leading, spacing: 5) { Text(practice.title).font(.headline); Label("\(practice.date)  ·  \(practice.activities.count) activities  ·  \(practice.totalText)", systemImage: "calendar").font(.caption).foregroundStyle(.secondary) }; Spacer(); Image(systemName: "chevron.right").foregroundStyle(.secondary) }.padding(.vertical, 5) } }
+private struct UpNextRow: View { let practice: Practice; var body: some View { HStack(spacing: 14) { Image(systemName: "calendar").font(.title3).foregroundStyle(.white).frame(width: 44, height: 44).background(NextTouchTheme.accent, in: RoundedRectangle(cornerRadius: NextTouchTheme.cornerRadius)); VStack(alignment: .leading, spacing: 5) { Text(practice.title).font(.headline); Label("\(practice.date)  ·  \(practice.activities.count) activities  ·  \(practice.totalText)", systemImage: "calendar").font(.caption).foregroundStyle(.secondary) }; Spacer(); Image(systemName: "chevron.right").foregroundStyle(.secondary) }.padding(.vertical, 5) } }
 private struct PracticeRow: View { let practice: Practice; var body: some View { HStack { Image(systemName: "calendar").foregroundStyle(Color.nextTouch); VStack(alignment: .leading, spacing: 4) { Text(practice.title).font(.subheadline.weight(.semibold)); Text("\(practice.date)  ·  \(practice.activities.count) activities  ·  \(practice.totalText)").font(.caption).foregroundStyle(.secondary) }; Spacer(); Text(practice.onWatch ? "On Watch" : "Not on Watch").font(.caption2.weight(.semibold)).foregroundStyle(practice.onWatch ? Color.nextTouch : .secondary); Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary) } } }
-extension Color { static let nextTouch = Color(red: 0.62, green: 0.07, blue: 0.15) }
+extension Color { static let nextTouch = NextTouchTheme.accent }

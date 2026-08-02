@@ -21,6 +21,7 @@
 		00000000000000000000005D /* SyncInboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004C /* SyncInboxView.swift */; };
 		00000000000000000000005E /* PracticeValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004D /* PracticeValidation.swift */; };
 		00000000000000000000005F /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004E /* Repositories.swift */; };
+		000000000000000000000110 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* Theme.swift */; };
 		000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000091 /* PracticeTimerEngineTests.swift */; };
 		000000000000000000000107 /* PracticeDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* PracticeDomainTests.swift */; };
 		00000000000000000000010B /* starter_drills_v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010A /* starter_drills_v1.json */; };
@@ -52,6 +53,7 @@
 		000000000000000000000108 /* PracticeDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDomainTests.swift; sourceTree = "<group>"; };
 		00000000000000000000010A /* starter_drills_v1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ../starter_drills_v1.json; sourceTree = "<group>"; };
 		00000000000000000000010D /* seeded-drills.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ../seeded-drills.json; sourceTree = "<group>"; };
+		000000000000000000000111 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		000000000000000000000092 /* NextTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NextTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				00000000000000000000004C /* SyncInboxView.swift */,
 				00000000000000000000004D /* PracticeValidation.swift */,
 				00000000000000000000004E /* Repositories.swift */,
+				000000000000000000000111 /* Theme.swift */,
 				00000000000000000000010A /* starter_drills_v1.json */,
 				00000000000000000000010D /* seeded-drills.json */,
 			);
@@ -190,6 +193,7 @@
 				00000000000000000000005D /* SyncInboxView.swift in Sources */,
 				00000000000000000000005E /* PracticeValidation.swift in Sources */,
 				00000000000000000000005F /* Repositories.swift in Sources */,
+				000000000000000000000110 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,7 @@ struct PracticeEditorView: View {
                         }
                         .foregroundStyle(.primary)
                     }
+                    .listRowBackground(NextTouchTheme.cardBackground)
                     Section("ACTIVITIES") {
                         ForEach(practice.activities.indices, id: \.self) { index in
                             ActivityRow(activity: practice.activities[index])
@@ -35,6 +36,7 @@ struct PracticeEditorView: View {
                         .onMove { practice.activities.move(fromOffsets: $0, toOffset: $1) }
                         Button { showAddChoices = true } label: { Label("Add Activity", systemImage: "plus") }.foregroundStyle(Color.nextTouch)
                     }
+                    .listRowBackground(NextTouchTheme.cardBackground)
                 }
                 .listStyle(.plain)
                 .environment(\.editMode, .constant(.active))
@@ -80,7 +82,7 @@ struct PracticeEditorView: View {
             .task { bridge.activate() }
             .alert("Practice needs attention", isPresented: Binding(get: { validationMessage != nil }, set: { if !$0 { validationMessage = nil } })) { Button("OK", role: .cancel) {} } message: { Text(validationMessage ?? "") }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .background(Color(uiColor: .systemGroupedBackground).ignoresSafeArea())
+            .background(NextTouchTheme.pageBackground.ignoresSafeArea())
     }
 
     private func addActivity(title: String, type: PracticeItemType) { practice.activities.append(.init(title: title, type: type, minutes: 10, notes: [])); editingIndex = practice.activities.count - 1 }
@@ -179,7 +181,7 @@ private struct ActivityRow: View {
     let activity: PracticeActivity
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: activity.symbol).foregroundStyle(Color.nextTouch).frame(width: 34, height: 34).background(Color.nextTouch.opacity(0.08), in: RoundedRectangle(cornerRadius: 4))
+            Image(systemName: activity.symbol).foregroundStyle(NextTouchTheme.accent).frame(width: 34, height: 34).background(NextTouchTheme.accent.opacity(0.08), in: RoundedRectangle(cornerRadius: NextTouchTheme.cornerRadius))
             VStack(alignment: .leading, spacing: 3) {
                 Text(activity.title).font(.subheadline.weight(.semibold))
                 Text(activity.type.rawValue).font(.caption).foregroundStyle(.secondary)
