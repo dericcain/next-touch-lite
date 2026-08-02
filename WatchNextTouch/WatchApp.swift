@@ -98,7 +98,7 @@ struct WatchPreflight: View {
             NavigationLink { WatchLive(practice: practice) } label: {
                 Label("Start Practice", systemImage: "play.fill")
             }
-            .buttonStyle(.borderedProminent).tint(.green)
+            .buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle(radius: NextTouchTheme.controlCornerRadius)).tint(.green)
             Text("Downloaded · ready offline").font(.caption2).foregroundStyle(.secondary)
         }
         .padding().navigationTitle("Preflight")
@@ -142,7 +142,7 @@ struct WatchLive: View {
                     Button {
                         if index < practice.activities.count - 1 { move(to: index + 1) }
                     } label: { Image(systemName: "forward.end.fill") }.accessibilityLabel("Next activity")
-                }.buttonStyle(.borderedProminent).tint(.black)
+                }.buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle(radius: NextTouchTheme.controlCornerRadius)).tint(.black)
                 Button("Finish practice") { showingFinish = true }.font(.caption)
             }.padding()
         }

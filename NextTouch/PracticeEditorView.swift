@@ -43,7 +43,7 @@ struct PracticeEditorView: View {
                 VStack(spacing: 10) {
                     Label(bridge.isReachable ? "Watch connected" : "Watch sync queued offline", systemImage: bridge.isReachable ? "applewatch.radiowaves.left.and.right" : "icloud.slash").font(.caption2).foregroundStyle(.secondary)
                     Text("\(practice.activities.count) activities  ·  \(practice.totalText)").font(.subheadline.monospacedDigit()).foregroundStyle(.secondary)
-                    Button { commitSave(sync: true) } label: { Label("Save & sync to Watch", systemImage: "applewatch") .frame(maxWidth: .infinity) }.buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle(radius: 4)).tint(.nextTouch)
+                    Button { commitSave(sync: true) } label: { Label("Save & sync to Watch", systemImage: "applewatch") .frame(maxWidth: .infinity) }.buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle(radius: NextTouchTheme.controlCornerRadius)).tint(.nextTouch)
                 }.padding()
             }
             .navigationTitle("Practice Editor")

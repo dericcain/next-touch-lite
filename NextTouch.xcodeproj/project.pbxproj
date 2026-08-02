@@ -22,6 +22,7 @@
 		00000000000000000000005E /* PracticeValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004D /* PracticeValidation.swift */; };
 		00000000000000000000005F /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004E /* Repositories.swift */; };
 		000000000000000000000110 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* Theme.swift */; };
+		000000000000000000000112 /* Theme.swift in Watch Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* Theme.swift */; };
 		000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000091 /* PracticeTimerEngineTests.swift */; };
 		000000000000000000000107 /* PracticeDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* PracticeDomainTests.swift */; };
 		00000000000000000000010B /* starter_drills_v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010A /* starter_drills_v1.json */; };
@@ -210,7 +211,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-		000000000000000000000085 /* Watch Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000084 /* WatchApp.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000085 /* Watch Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000084 /* WatchApp.swift in Sources */, 000000000000000000000112 /* Theme.swift in Watch Sources */); runOnlyForDeploymentPostprocessing = 0; };
 		000000000000000000000095 /* Test Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */, 000000000000000000000107 /* PracticeDomainTests.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
 		000000000000000000000105 /* Embed Watch Content */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = "$(CONTENTS_FOLDER_PATH)/Watch"; dstSubfolderSpec = 16; files = (000000000000000000000106 /* WatchNextTouchExtension.appex in Embed Watch Content */); runOnlyForDeploymentPostprocessing = 0; };
 
