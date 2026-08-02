@@ -22,13 +22,12 @@
 		00000000000000000000005E /* PracticeValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004D /* PracticeValidation.swift */; };
 		00000000000000000000005F /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000004E /* Repositories.swift */; };
 		000000000000000000000110 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* Theme.swift */; };
-		000000000000000000000112 /* Theme.swift in Watch Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* Theme.swift */; };
+		000000000000000000000114 /* WatchApp.swift in Watch App Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000083 /* WatchApp.swift */; };
+		000000000000000000000115 /* Theme.swift in Watch App Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111 /* Theme.swift */; };
 		000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000091 /* PracticeTimerEngineTests.swift */; };
 		000000000000000000000107 /* PracticeDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* PracticeDomainTests.swift */; };
 		00000000000000000000010B /* starter_drills_v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010A /* starter_drills_v1.json */; };
 		00000000000000000000010C /* seeded-drills.json in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010D /* seeded-drills.json */; };
-		000000000000000000000106 /* WatchNextTouchExtension.appex in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 000000000000000000000086 /* WatchNextTouchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		000000000000000000000084 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000083 /* WatchApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +47,6 @@
 		00000000000000000000004E /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		000000000000000000000061 /* NextTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = NextTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000083 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
-		000000000000000000000086 /* WatchNextTouchExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; path = WatchNextTouchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000102 /* WatchNextTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = WatchNextTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000091 /* PracticeTimerEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTimerEngineTests.swift; sourceTree = "<group>"; };
 		000000000000000000000108 /* PracticeDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDomainTests.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000061 /* NextTouch.app */,
-				000000000000000000000086 /* WatchNextTouchExtension.appex */,
 				000000000000000000000102 /* WatchNextTouch.app */,
 				000000000000000000000092 /* NextTouchTests.xctest */,
 			);
@@ -132,19 +129,16 @@
 			productReference = 000000000000000000000061 /* NextTouch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		000000000000000000000080 /* WatchNextTouchExtension */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000012; buildPhases = (000000000000000000000085); buildRules = (); dependencies = (); name = WatchNextTouchExtension; productName = WatchNextTouchExtension; productReference = 000000000000000000000086; productType = "com.apple.product-type.watchkit2-extension"; };
-		000000000000000000000100 /* WatchNextTouch */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000014; buildPhases = (000000000000000000000105); buildRules = (); dependencies = (000000000000000000000103); name = WatchNextTouch; productName = WatchNextTouch; productReference = 000000000000000000000102; productType = "com.apple.product-type.application.watchapp2"; };
+		000000000000000000000100 /* WatchNextTouch */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000014; buildPhases = (000000000000000000000113); buildRules = (); dependencies = (); name = WatchNextTouch; productName = WatchNextTouch; productReference = 000000000000000000000102; productType = "com.apple.product-type.application"; };
 		000000000000000000000094 /* NextTouchTests */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000013; buildPhases = (000000000000000000000095); buildRules = (); dependencies = (000000000000000000000096); name = NextTouchTests; productName = NextTouchTests; productReference = 000000000000000000000092; productType = "com.apple.product-type.bundle.unit-test"; };
 /* End PBXNativeTarget section */
 
 /* Begin PBXTargetDependency section */
 		000000000000000000000096 /* NextTouch host */ = {isa = PBXTargetDependency; target = 000000000000000000000060 /* NextTouch */; targetProxy = 000000000000000000000097; };
-		000000000000000000000103 /* Watch extension */ = {isa = PBXTargetDependency; target = 000000000000000000000080 /* WatchNextTouchExtension */; targetProxy = 000000000000000000000104; };
 /* End PBXTargetDependency section */
 
 /* Begin PBXContainerItemProxy section */
 		000000000000000000000097 = {isa = PBXContainerItemProxy; containerPortal = 000000000000000000000001; proxyType = 1; remoteGlobalIDString = 000000000000000000000060; remoteInfo = NextTouch; };
-		000000000000000000000104 = {isa = PBXContainerItemProxy; containerPortal = 000000000000000000000001; proxyType = 1; remoteGlobalIDString = 000000000000000000000080; remoteInfo = WatchNextTouchExtension; };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXProject section */
@@ -168,7 +162,6 @@
 			projectRoot = "";
 			targets = (
 				000000000000000000000060 /* NextTouch */,
-				000000000000000000000080 /* WatchNextTouchExtension */,
 				000000000000000000000100 /* WatchNextTouch */,
 				000000000000000000000094 /* NextTouchTests */,
 			);
@@ -211,17 +204,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-		000000000000000000000085 /* Watch Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000084 /* WatchApp.swift in Sources */, 000000000000000000000112 /* Theme.swift in Watch Sources */); runOnlyForDeploymentPostprocessing = 0; };
 		000000000000000000000095 /* Test Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000090 /* PracticeTimerEngineTests.swift in Sources */, 000000000000000000000107 /* PracticeDomainTests.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
-		000000000000000000000105 /* Embed Watch Content */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = "$(CONTENTS_FOLDER_PATH)/Watch"; dstSubfolderSpec = 16; files = (000000000000000000000106 /* WatchNextTouchExtension.appex in Embed Watch Content */); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000113 /* Watch App Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000114 /* WatchApp.swift in Watch App Sources */, 000000000000000000000115 /* Theme.swift in Watch App Sources */); runOnlyForDeploymentPostprocessing = 0; };
 
 /* Begin XCBuildConfiguration section */
-		000000000000000000000074 /* Watch Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Debug; };
-		000000000000000000000075 /* Watch Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Release; };
 		000000000000000000000076 /* Tests Debug */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.tests; PRODUCT_NAME = NextTouchTests; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextTouch.app/NextTouch"; }; name = Debug; };
 		000000000000000000000077 /* Tests Release */ = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.tests; PRODUCT_NAME = NextTouchTests; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextTouch.app/NextTouch"; }; name = Release; };
-		000000000000000000000078 /* Watch App Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.nexttouch.practice; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Debug; };
-		000000000000000000000079 /* Watch App Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.nexttouch.practice; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Release; };
+		000000000000000000000078 /* Watch App Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"; INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.nexttouch.practice; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Debug; };
+		000000000000000000000079 /* Watch App Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"; INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.nexttouch.practice; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.nexttouch.practice.watchkitapp; PRODUCT_NAME = WatchNextTouch; SDKROOT = watchos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; }; name = Release; };
 		000000000000000000000070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,7 +336,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		000000000000000000000012 /* Watch configuration */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000074 /* Watch Debug */,000000000000000000000075 /* Watch Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 		000000000000000000000013 /* Tests configuration */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000076 /* Tests Debug */,000000000000000000000077 /* Tests Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 		000000000000000000000014 /* Watch app configuration */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000078 /* Watch App Debug */,000000000000000000000079 /* Watch App Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 		000000000000000000000010 /* Build configuration list for PBXProject "NextTouch" */ = {
