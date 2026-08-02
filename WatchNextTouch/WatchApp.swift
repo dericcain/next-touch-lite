@@ -127,25 +127,47 @@ struct WatchLive: View {
     var body: some View {
         ZStack {
             (state == .expired ? Color.yellow : Color.green).ignoresSafeArea()
-            VStack(spacing: 10) {
-                HStack { Text(activity.title); Spacer(); Text("\(index + 1) of \(practice.activities.count)") }.font(.caption)
+            VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
+                HStack(spacing: 4) {
+                    Text(activity.title).lineLimit(1).minimumScaleFactor(0.75)
+                    Spacer(minLength: 2)
+                    Text("\(index + 1)/\(practice.activities.count)")
+                }.font(.caption2)
                 Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
-                    .font(.system(size: 54, design: .monospaced))
-                Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running").font(.caption.bold())
+                    .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
+                    .minimumScaleFactor(0.8)
+                Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
+                    .font(.caption2.bold())
                 if !activity.notes.isEmpty {
-                    VStack(alignment: .leading) { ForEach(activity.notes, id: \.self) { Text("• \($0)").font(.caption) } }
+                    VStack(alignment: .leading, spacing: 1) {
+                        ForEach(activity.notes.prefix(2), id: \.self) { Text("• \($0)").font(.caption2).lineLimit(1) }
+                    }
                 }
-                Spacer()
-                HStack {
-                    Button { move(to: max(0, index - 1)) } label: { Image(systemName: "backward.end.fill") }.accessibilityLabel("Previous activity")
-                    Button { togglePause() } label: { Image(systemName: state == .paused ? "play.fill" : "pause.fill") }.accessibilityLabel(state == .paused ? "Resume practice" : "Pause practice")
+                Spacer(minLength: 2)
+                HStack(spacing: 5) {
+                    Button { move(to: max(0, index - 1)) } label: { Image(systemName: "backward.end.fill") }
+                        .accessibilityLabel("Previous activity")
+                        .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
+                    Button { togglePause() } label: { Image(systemName: state == .paused ? "play.fill" : "pause.fill") }
+                        .accessibilityLabel(state == .paused ? "Resume practice" : "Pause practice")
+                        .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
                     Button {
                         if index < practice.activities.count - 1 { move(to: index + 1) }
-                    } label: { Image(systemName: "forward.end.fill") }.accessibilityLabel("Next activity")
-                }.buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle(radius: NextTouchTheme.controlCornerRadius)).tint(.black)
-                Button("Finish practice") { showingFinish = true }.font(.caption)
-            }.padding()
+                    } label: { Image(systemName: "forward.end.fill") }
+                        .accessibilityLabel("Next activity")
+                        .frame(width: NextTouchTheme.watchControlDiameter, height: NextTouchTheme.watchControlDiameter)
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.circle)
+                .controlSize(.small)
+                .tint(.black)
+                Button("Finish") { showingFinish = true }.font(.caption2)
+            }
+            .padding(.horizontal, NextTouchTheme.watchContentPadding)
+            .padding(.vertical, 2)
         }
+        .navigationBarBackButtonHidden()
+        .toolbar(.hidden, for: .navigationBar)
         .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { tick in
             now = tick
             if state == .running && remaining == 0 { state = .expired }

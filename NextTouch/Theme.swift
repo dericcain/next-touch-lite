@@ -14,4 +14,10 @@ enum NextTouchTheme {
     static let accent = Color(red: 0.62, green: 0.07, blue: 0.15)
     static let cardPadding: CGFloat = 16
     static let sectionSpacing: CGFloat = 12
+    #if os(watchOS)
+    static let watchControlDiameter: CGFloat = 36
+    static let watchContentPadding: CGFloat = 8
+    static let watchVerticalSpacing: CGFloat = 4
+    static let watchTimerFontSize: CGFloat = 46
+    #endif
 }
