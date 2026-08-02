@@ -14,7 +14,7 @@ struct PracticeLibraryView: View {
                 Section("All practices") { ForEach(store.practices) { practice in Button { store.selectedPractice = practice } label: { PracticeRow(practice: practice) }.buttonStyle(.plain).contextMenu { Button { store.duplicate(practice) } label: { Label("Duplicate", systemImage: "plus.square.on.square") } }.swipeActions { Button(role: .destructive) { deleteCandidate = practice } label: { Label("Delete", systemImage: "trash") } } } }
                 Section { Button { showingWatch = true } label: { Label("Open watch companion", systemImage: "applewatch") } }
             }
-            .listStyle(.insetGrouped).navigationTitle("Practices").toolbar { ToolbarItemGroup(placement: .topBarTrailing) { Button { showingInbox = true } label: { Image(systemName: "arrow.triangle.2.circlepath") }; Button { store.selectedPractice = Practice(title: "New Practice", date: "Not scheduled", activities: []) } label: { Image(systemName: "plus") } } }
+            .listStyle(.plain).navigationTitle("Practices").toolbar { ToolbarItemGroup(placement: .topBarTrailing) { Button { showingInbox = true } label: { Image(systemName: "arrow.triangle.2.circlepath") }; Button { store.selectedPractice = Practice(title: "New Practice", date: "Not scheduled", activities: []) } label: { Image(systemName: "plus") } } }
             .navigationDestination(item: $store.selectedPractice) { practice in
                 PracticeEditorView(practice: practice) { saved in
                     store.save(saved)
