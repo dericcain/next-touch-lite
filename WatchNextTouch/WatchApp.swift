@@ -10,9 +10,19 @@ struct WatchNextTouchApp: App {
 struct WatchActivity: Identifiable, Codable {
     let id: UUID
     let title: String
+    let category: String
     let minutes: Int
     let notes: [String]
-    init(id: UUID = UUID(), title: String, minutes: Int, notes: [String]) { self.id = id; self.title = title; self.minutes = minutes; self.notes = notes }
+    init(id: UUID = UUID(), title: String, category: String = "", minutes: Int, notes: [String]) { self.id = id; self.title = title; self.category = category; self.minutes = minutes; self.notes = notes }
+    private enum CodingKeys: String, CodingKey { case id, title, category, minutes, notes }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(UUID.self, forKey: .id)
+        title = try container.decode(String.self, forKey: .title)
+        category = try container.decodeIfPresent(String.self, forKey: .category) ?? ""
+        minutes = try container.decode(Int.self, forKey: .minutes)
+        notes = try container.decode([String].self, forKey: .notes)
+    }
 }
 
 struct WatchPractice: Identifiable, Codable {
@@ -24,9 +34,9 @@ struct WatchPractice: Identifiable, Codable {
 }
 
 private let samplePractice = WatchPractice(title: "Wednesday Training", activities: [
-    .init(title: "Warm-Up", minutes: 10, notes: ["Movement prep"]),
-    .init(title: "Rondo 4v2", minutes: 12, notes: ["Two-touch maximum"]),
-    .init(title: "Positional Play", minutes: 20, notes: ["Find the free player"])
+    .init(title: "Warm-Up", category: "Warm-up", minutes: 10, notes: ["Movement prep"]),
+    .init(title: "Rondo 4v2", category: "Passing", minutes: 12, notes: ["Two-touch maximum"]),
+    .init(title: "Positional Play", category: "Game", minutes: 20, notes: ["Find the free player"])
 ])
 
 @MainActor final class WatchSnapshotStore: NSObject, ObservableObject, WCSessionDelegate {
@@ -62,7 +72,7 @@ private struct WatchPayloadPractice: Codable {
 }
 private struct WatchPayloadActivity: Codable {
     let id: UUID; let title: String; let type: String; let minutes: Int; let notes: [String]
-    var asWatchActivity: WatchActivity { WatchActivity(id: id, title: title, minutes: minutes, notes: notes) }
+    var asWatchActivity: WatchActivity { WatchActivity(id: id, title: title, category: type, minutes: minutes, notes: notes) }
 }
 
 struct WatchPracticeList: View {
@@ -107,6 +117,7 @@ struct WatchPreflight: View {
 
 struct WatchLive: View {
     let practice: WatchPractice
+    @Environment(\.dismiss) private var dismiss
     @State private var index = 0
     @State private var state: LiveState = .running
     @State private var startedAt = Date()
@@ -117,6 +128,11 @@ struct WatchLive: View {
 
     fileprivate enum LiveState: String, Codable { case running, paused, expired }
     private var activity: WatchActivity { practice.activities[index] }
+    private var nextActivity: WatchActivity? {
+        let nextIndex = index + 1
+        guard practice.activities.indices.contains(nextIndex) else { return nil }
+        return practice.activities[nextIndex]
+    }
     private var remaining: Int {
         guard state != .expired else { return 0 }
         let anchor = pausedAt ?? now
@@ -129,23 +145,53 @@ struct WatchLive: View {
             (state == .expired ? Color.yellow : Color.green).ignoresSafeArea()
             ScrollView(.vertical) {
                 VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
-                    HStack(spacing: 4) {
-                        Text(activity.title).lineLimit(1).minimumScaleFactor(0.75)
+                    HStack {
+                        Text("\(practice.totalMinutes)m total")
+                        Spacer(minLength: 4)
+                        Text("\(index + 1) of \(practice.activities.count)")
+                    }
+                    .font(.caption2)
+                    .minimumScaleFactor(0.8)
+                    HStack(spacing: 6) {
+                        Image(systemName: activitySymbol(for: activity.category))
+                            .font(.caption)
+                            .frame(width: 20)
+                        Text(activity.title)
+                            .font(.caption)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.75)
                         Spacer(minLength: 2)
-                    }.font(.caption)
-                    Text("Activity \(index + 1) of \(practice.activities.count)  ·  \(practice.totalMinutes)m total")
-                        .font(.caption2)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.75)
+                        if !activity.notes.isEmpty {
+                            Image(systemName: "text.bubble")
+                                .font(.caption)
+                                .accessibilityLabel("Coach notes available")
+                        }
+                    }
                     Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
                         .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
                         .minimumScaleFactor(0.8)
                     Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
                         .font(.caption2.bold())
-                    if !activity.notes.isEmpty {
-                        VStack(alignment: .leading, spacing: 1) {
-                            ForEach(activity.notes.prefix(2), id: \.self) { Text("• \($0)").font(.caption2).lineLimit(1) }
+                    if let note = activity.notes.first {
+                        HStack(spacing: 4) {
+                            Image(systemName: "text.bubble")
+                            Text(note).lineLimit(1)
                         }
+                        .font(.caption2)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    Divider().overlay(Color.black.opacity(0.35))
+                    if let nextActivity {
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text("Next up").font(.caption2)
+                            HStack {
+                                Text(nextActivity.title).lineLimit(1).minimumScaleFactor(0.75)
+                                Spacer(minLength: 4)
+                                Text("\(nextActivity.minutes)m")
+                            }
+                            .font(.caption)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     HStack(spacing: 5) {
                         Button { move(to: max(0, index - 1)) } label: { Image(systemName: "backward.end.fill") }
@@ -220,9 +266,20 @@ struct WatchLive: View {
     private func finish() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         let summary = WatchRunSummary(id: UUID(), practiceID: practice.id, practiceRevision: 1, startedAt: startedAt, endedAt: now, completed: index == practice.activities.count - 1 && state == .expired, advancementTimestamps: [:])
-        guard WCSession.isSupported(), let data = try? JSONEncoder().encode(summary) else { return }
-        WCSession.default.transferUserInfo(["kind": "practice_run_summary", "schema": 1, "payload": data])
+        if WCSession.isSupported(), let data = try? JSONEncoder().encode(summary) {
+            WCSession.default.transferUserInfo(["kind": "practice_run_summary", "schema": 1, "payload": data])
+        }
         UserDefaults.standard.removeObject(forKey: checkpointKey)
+        dismiss()
+    }
+
+    private func activitySymbol(for category: String) -> String {
+        switch category.lowercased() {
+        case "passing": return "arrow.left.arrow.right"
+        case "game": return "sparkles"
+        case "warm-up", "warmup": return "flame"
+        default: return "circle.grid.2x2"
+        }
     }
 
     private func scheduleAlerts() {
