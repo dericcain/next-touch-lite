@@ -202,18 +202,10 @@ struct WatchLive: View {
                             .font(.caption)
                             .frame(width: 20)
                         Text(activity.title)
-                            .font(.caption)
+                            .font(.callout.bold())
                             .lineLimit(1)
                             .minimumScaleFactor(0.75)
                         Spacer(minLength: 2)
-                        if !activity.notes.isEmpty {
-                            Button { showingNotes = true } label: {
-                                Image(systemName: "info.circle")
-                                    .font(.caption)
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel("Show coach notes")
-                        }
                     }
                     HStack(spacing: 4) {
                         Button { move(to: max(0, index - 1)) } label: {
@@ -245,15 +237,17 @@ struct WatchLive: View {
                         .accessibilityLabel("Next activity")
                         .disabled(index >= practice.activities.count - 1)
                     }
-                    Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
-                        .font(.caption2.bold())
-                    if let note = activity.notes.first {
-                        HStack(spacing: 4) {
-                            Image(systemName: "info.circle")
-                            Text(note).lineLimit(1)
+                    HStack(spacing: 5) {
+                        Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
+                            .font(.caption2.bold())
+                        if !activity.notes.isEmpty {
+                            Button { showingNotes = true } label: {
+                                Image(systemName: "info.circle")
+                                    .font(.caption2)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel("Show coach notes")
                         }
-                        .font(.caption2)
-                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     Divider().overlay(Color.black.opacity(0.35))
                     if let nextActivity {
