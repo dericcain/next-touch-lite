@@ -216,6 +216,7 @@ struct WatchLive: View {
                         .padding(.leading, 26)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .offset(y: -8)
                     HStack(spacing: 4) {
                         Button { move(to: max(0, index - 1)) } label: {
                             Image(systemName: "chevron.left")
@@ -256,6 +257,7 @@ struct WatchLive: View {
                     }
                     .font(.caption2)
                     .lineLimit(1)
+                    .padding(.top, 8)
                     Divider().overlay(Color.black.opacity(0.35))
                     if let nextActivity {
                         VStack(alignment: .leading, spacing: 1) {
