@@ -190,19 +190,32 @@ struct WatchLive: View {
                 .ignoresSafeArea()
             ScrollView(.vertical) {
                 VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
-                    HStack(spacing: 6) {
-                        Image(systemName: activitySymbol(for: activity.category))
-                            .font(.caption)
-                            .frame(width: 20)
-                        Text(activity.title)
-                            .font(.callout.bold())
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
-                        Spacer(minLength: 2)
-                        Text("\(index + 1) of \(practice.activities.count)")
-                            .font(.caption2)
-                            .lineLimit(1)
+                    VStack(alignment: .leading, spacing: 1) {
+                        HStack(spacing: 6) {
+                            Image(systemName: activitySymbol(for: activity.category))
+                                .font(.caption)
+                                .frame(width: 20)
+                            Text(activity.title)
+                                .font(.callout.bold())
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.75)
+                            Spacer(minLength: 2)
+                        }
+                        HStack(spacing: 5) {
+                            Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
+                                .font(.caption2.bold())
+                            if !activity.notes.isEmpty {
+                                Button { notesActivity = activity } label: {
+                                    Image(systemName: "info.circle")
+                                        .font(.caption2)
+                                }
+                                .buttonStyle(.plain)
+                                .accessibilityLabel("Show coach notes")
+                            }
+                        }
+                        .padding(.leading, 26)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     HStack(spacing: 4) {
                         Button { move(to: max(0, index - 1)) } label: {
                             Image(systemName: "chevron.left")
@@ -236,18 +249,13 @@ struct WatchLive: View {
                         .accessibilityLabel("Next activity")
                         .disabled(index >= practice.activities.count - 1)
                     }
-                    HStack(spacing: 5) {
-                        Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
-                            .font(.caption2.bold())
-                        if !activity.notes.isEmpty {
-                            Button { notesActivity = activity } label: {
-                                Image(systemName: "info.circle")
-                                    .font(.caption2)
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel("Show coach notes")
-                        }
+                    HStack {
+                        Text("\(practice.totalMinutes)m total")
+                        Spacer(minLength: 4)
+                        Text("\(index + 1) of \(practice.activities.count)")
                     }
+                    .font(.caption2)
+                    .lineLimit(1)
                     Divider().overlay(Color.black.opacity(0.35))
                     if let nextActivity {
                         VStack(alignment: .leading, spacing: 1) {
@@ -273,13 +281,7 @@ struct WatchLive: View {
             .scrollIndicators(.hidden)
         }
         .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Text("\(practice.totalMinutes)m total")
-                    .font(.caption2)
-                    .foregroundStyle(.primary.opacity(0.8))
-            }
-        }
+        .toolbar(.hidden, for: .navigationBar)
         .sheet(item: $notesActivity) { selectedActivity in
             WatchNotesSheet(activity: selectedActivity)
         }
@@ -393,14 +395,11 @@ private struct WatchNotesSheet: View {
                 Text(activity.title)
                     .font(.caption.bold())
                     .fixedSize(horizontal: false, vertical: true)
+                Divider()
                 ForEach(activity.notes, id: \.self) { note in
-                    HStack(alignment: .top, spacing: 5) {
-                        Image(systemName: "info.circle")
-                            .padding(.top, 1)
-                        Text(note)
-                            .font(.caption2)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
+                    Text(note)
+                        .font(.caption2)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
