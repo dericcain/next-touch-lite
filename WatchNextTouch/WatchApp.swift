@@ -167,7 +167,7 @@ struct WatchLive: View {
     @State private var pausedElapsed: TimeInterval = 0
     @State private var now = Date()
     @State private var showingFinish = false
-    @State private var showingNotes = false
+    @State private var notesActivity: WatchActivity?
 
     fileprivate enum LiveState: String, Codable { case running, paused, expired }
     private var activity: WatchActivity { practice.activities[index] }
@@ -190,13 +190,6 @@ struct WatchLive: View {
                 .ignoresSafeArea()
             ScrollView(.vertical) {
                 VStack(spacing: NextTouchTheme.watchVerticalSpacing) {
-                    HStack {
-                        Text("\(practice.totalMinutes)m total")
-                        Spacer(minLength: 4)
-                        Text("\(index + 1) of \(practice.activities.count)")
-                    }
-                    .font(.caption2)
-                    .minimumScaleFactor(0.8)
                     HStack(spacing: 6) {
                         Image(systemName: activitySymbol(for: activity.category))
                             .font(.caption)
@@ -206,12 +199,15 @@ struct WatchLive: View {
                             .lineLimit(1)
                             .minimumScaleFactor(0.75)
                         Spacer(minLength: 2)
+                        Text("\(index + 1) of \(practice.activities.count)")
+                            .font(.caption2)
+                            .lineLimit(1)
                     }
                     HStack(spacing: 4) {
                         Button { move(to: max(0, index - 1)) } label: {
                             Image(systemName: "chevron.left")
                                 .font(.title3.bold())
-                                .frame(width: 30, height: 54)
+                                .frame(width: 24, height: 48)
                         }
                         .buttonStyle(.plain)
                         .accessibilityLabel("Previous activity")
@@ -220,7 +216,10 @@ struct WatchLive: View {
                         Button { togglePause() } label: {
                             Text("\(remaining / 60):\(String(format: "%02d", remaining % 60))")
                                 .font(.system(size: NextTouchTheme.watchTimerFontSize, design: .monospaced))
-                                .minimumScaleFactor(0.8)
+                                .monospacedDigit()
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.72)
+                                .layoutPriority(1)
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.plain)
@@ -231,7 +230,7 @@ struct WatchLive: View {
                         } label: {
                             Image(systemName: "chevron.right")
                                 .font(.title3.bold())
-                                .frame(width: 30, height: 54)
+                                .frame(width: 24, height: 48)
                         }
                         .buttonStyle(.plain)
                         .accessibilityLabel("Next activity")
@@ -241,7 +240,7 @@ struct WatchLive: View {
                         Text(state == .paused ? "Paused" : state == .expired ? "Ready for next" : "Running")
                             .font(.caption2.bold())
                         if !activity.notes.isEmpty {
-                            Button { showingNotes = true } label: {
+                            Button { notesActivity = activity } label: {
                                 Image(systemName: "info.circle")
                                     .font(.caption2)
                             }
@@ -274,9 +273,15 @@ struct WatchLive: View {
             .scrollIndicators(.hidden)
         }
         .navigationBarBackButtonHidden()
-        .toolbar(.hidden, for: .navigationBar)
-        .sheet(isPresented: $showingNotes) {
-            WatchNotesSheet(activity: activity)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Text("\(practice.totalMinutes)m total")
+                    .font(.caption2)
+                    .foregroundStyle(.primary.opacity(0.8))
+            }
+        }
+        .sheet(item: $notesActivity) { selectedActivity in
+            WatchNotesSheet(activity: selectedActivity)
         }
         .onReceive(Timer.publish(every: 1, on: .main, in: .common).autoconnect()) { tick in
             now = tick
@@ -378,24 +383,31 @@ struct WatchLive: View {
 
 private struct WatchNotesSheet: View {
     let activity: WatchActivity
-    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("Coach notes").font(.headline)
-                Spacer()
-                Button("Done") { dismiss() }.font(.caption)
-            }
-            Text(activity.title).font(.caption.bold())
-            ForEach(activity.notes, id: \.self) { note in
-                HStack(alignment: .top, spacing: 5) {
-                    Image(systemName: "info.circle")
-                    Text(note).font(.caption2)
+        ScrollView(.vertical) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Coach notes")
+                    .font(.headline)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(activity.title)
+                    .font(.caption.bold())
+                    .fixedSize(horizontal: false, vertical: true)
+                ForEach(activity.notes, id: \.self) { note in
+                    HStack(alignment: .top, spacing: 5) {
+                        Image(systemName: "info.circle")
+                            .padding(.top, 1)
+                        Text(note)
+                            .font(.caption2)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, NextTouchTheme.watchContentPadding)
+            .padding(.vertical, 8)
         }
-        .padding()
+        .scrollIndicators(.hidden)
     }
 }
 

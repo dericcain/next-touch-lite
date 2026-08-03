@@ -18,6 +18,6 @@ enum NextTouchTheme {
     static let watchControlDiameter: CGFloat = 42
     static let watchContentPadding: CGFloat = 8
     static let watchVerticalSpacing: CGFloat = 4
-    static let watchTimerFontSize: CGFloat = 46
+    static let watchTimerFontSize: CGFloat = 38
     #endif
 }
